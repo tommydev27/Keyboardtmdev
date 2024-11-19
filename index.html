@@ -10,33 +10,32 @@
     
         body {
             font-family: Arial, sans-serif;
-        }
+             }
 
-        /* Gaya untuk profile-name */
-        .profile-name {
+           .profile-name {
             font-size: 15px;
             margin: 0px 100px 0;
             font-weight: bold;
             color: #333;
-        }
+            }
 
-        /* Gaya untuk icon material */
         .profile-name .material-symbols-outlined {
             font-size: 13px;
             color: white;
             background-color: #007bff;
             border-radius: 50%;
-        }
-.profile-name .container {
-    margin-bottom: 10px;
-}
+            }
+        
+          .profile-name .container {
+           margin-bottom: 10px;
+            }
 
           div button:hover {
           background-color: red;
           color: white; 
               }
-          .header-icons button:hover {
-           border: 1px solid gray;
+         .header-icons button:hover {
+          border: 1px solid gray;
                   }
 
         .container {
@@ -46,29 +45,30 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 10px;
-        }
+            }
 
-textarea {
-    width: 100%;
-    height: 130px;
-    padding: 0; /* Hilangkan padding untuk mencegah ukuran berubah */
-    font-size: 15px;
-    line-height: 1.2; /* Atur tinggi baris teks */
-    text-indent: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 0; /* Pastikan tidak ada margin tambahan */
-    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran */
-}
+            textarea {
+            width: 100%;
+            height: 130px;
+            padding: 1px;
+            font-size: 15px;
+            line-height: 1.2; /* Atur tinggi baris teks */
+            text-indent: 0px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 0;
+            box-sizing: border-box; 
+            }
           
             .button-container {
              display: flex;
-              gap: 45px;
+             gap: 45px;
+             margin-top: 5px;
              overflow-x: auto; 
              white-space: nowrap; 
              padding: 3px ;
              scroll-behavior: smooth; 
-                }
+             }
 
             .button-container button {
              display: inline-flex;
@@ -77,99 +77,88 @@ textarea {
              font-size: 12px;
              margin: 2px;
              border: none;
-             background-color: #666362;
+             background-color: #007bff;
              color: #F0FFFF;
              box-shadow: 0 0px 3px rgb(119, 136, 153);
              border-radius: 50px;
              cursor: pointer;
-             gap: 5px; /* Jarak antara ikon dan teks dalam tombol */
+             gap: 5px;
                }
             .button-container button .material-icons {
              font-size: 20px;
              line-height: 10px;
              vertical-align: middle;
              }
+            .button-container.keyboard-2-container {
+             display: flex;
+             justify-content: flex-end; 
+             gap: 5px;
+             margin-top: 0px;
+              }
+              
+            .keyboard {
+             width: 98%;
+             gap: 0px; 
+             padding-left: 0px; 
+             padding-top: 3px;
+             max-height: 138px;
+             overflow-y: auto;
+             background-color: #F8F8FF;
+             border-radius: 8px;
+             border: 2px solid #A9A9A9;
+             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+              }
 
+            .keyboard button {
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 30px;
+              font-size: 14px;
+              margin-left: 0px;
+              margin-right: 1px;
+              margin-bottom: 5px;
+              border-width: 4px 5px;
+              border-style: solid;
+              border-color: #2F4F4F;
+              background-color: black;
+              color: white;
+              border-radius: 4px;
+              cursor: pointer;
+              }
 
-/* Kontainer tombol keyboard */
-.button-container.keyboard-2-container {
-    display: flex;
-justify-content: flex-end; /* Memindahkan teks dan ikon ke kanan */
-    gap: 5px;
-    margin-top: 0px;
-}
+            .keyboard button:active {
+             background-color: #306EFF;
+              }
 
-.keyboard {
+            .button-container.keyboard-2-container button {
+              display: flex;
+              align-items: center; 
+              gap: 5px; /* Jarak antara ikon dan teks */
+              font-weight: bold;
+              padding: 2px 5px;
+              font-size: 12px;
+              justify-content: flex-end;
+              border: none;
+              background-color: #007bff; /* Warna khusus untuk tombol Keyboard 2 */
+              color: white;
+              border: 1px solid #ddd;
+              border-radius: 50px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+              }
 
-    width: 98%;
-    gap: 0px; 
-    padding-left: 0px; 
-    padding-top: 3px;
-    max-height: 138px;
-    overflow-y: auto;
-    background-color: #F8F8FF;
-    border-radius: 8px;
-    border: 2px solid #A9A9A9;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    
-    }
+            .button-container.keyboard-2-container button:hover {
+              background-color: #1F45FC;
+             color: white;/* Warna saat tombol di-hover */
+                }
 
-/* Gaya untuk tombol */
-.keyboard button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 30px;
-    font-size: 14px;
-  margin-left: 0px;
-  margin-right: 1px;
-
-
-  margin-bottom: 5px;
-    border-width: 4px 5px;
-    border-style: solid;
-    border-color: #2F4F4F;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    
-}
-
-/* Gaya saat tombol aktif */
-.keyboard button:active {
-    background-color: #306EFF;
-}
-
-
-/* tombol aktif keyboard 2*/
-.button-container.keyboard-2-container button {
-    display: flex;
-    align-items: center; /* Menjaga ikon dan teks tetap sejajar */
-    gap: 5px; /* Jarak antara ikon dan teks */
-    font-weight: bold;
-    padding: 2px 5px;
-    font-size: 12px;
-    justify-content: flex-end;
-    border: none;
-    background-color: #4B0082; /* Warna khusus untuk tombol Keyboard 2 */
-    color: white;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button-container.keyboard-2-container button:hover {
-    background-color: #1F45FC;
-    color: white;/* Warna saat tombol di-hover */
-}
-
-.button-container.keyboard-2-container .material-symbols-outlined {
-    font-size: 15px; /* Ukuran ikon */
-}
-#secondKeyboard {
+            .button-container.keyboard-2-container .material-symbols-outlined {
+            font-size: 15px; /* Ukuran ikon */
+              }
+              
+    #secondKeyboard {
     display: flex;
     flex-wrap: wrap;
     width: 97%;
@@ -182,49 +171,50 @@ justify-content: flex-end; /* Memindahkan teks dan ikon ke kanan */
     border-radius: 8px;
     border: 2px solid #A9A9A9;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
 
-}
-
-#secondKeyboard button {
+    #secondKeyboard button {
     width: 40px;
     height: 30px;
     font-size: 14px;
-    margin: -1px -2px; /* Mengurangi margin antar tombol */
-border-width: 4px 5px;
-border-style: solid;
-border-color: #2F4F4F;
+    margin: -1px -2px;
+    border-width: 4px 5px;
+    border-style: solid;
+    border-color: #2F4F4F;
     background-color: black;
     color: white;
     margin-left: 0px;
     border-radius: 4px;
     cursor: pointer;
-}
-  #secondKeyboard :hover {
-          background-color: red;
-          color: white; 
-              }
-#secondKeyboard button:active {
+    }
+    
+    #secondKeyboard :hover {
+    background-color: red;
+    color: white; 
+        }
+        
+    #secondKeyboard button:active {
     background-color: #0056b3;
-}
+    }
 
-/* Gaya untuk footer */
-footer {
+    /* Gaya untuk footer */
+    footer {
     font-size: 8px;
     color: #007bff;
     z-index: 10;
-    margin-top: 20px; /* Tambahkan jarak atas untuk menurunkan */
-    position: relative; /* Pastikan posisi bisa disesuaikan */
-}
-
-
+    margin-top: 20px; 
+    position: relative; 
+    }
 
   /* banner pilih huruf */
          h2 {
          font-size: 10px;
+         width: 10; height: 1px; background-color: #ddd;
+
          margin-top: 2px;
          margin-bottom: 2px;
          font-family: Arial, sans-serif;
-         background-color: white; 
+        text-decoration: underline;
          color: black; 
       /* Mengubah warna latar belakang saat hover */
          color: black; 
@@ -249,7 +239,7 @@ footer {
 
             .dark-mode {
               background: black;
-              color: #F0FFFF;
+              color: #ddd;
               }
 
             #toggle-dark-mode {
@@ -268,8 +258,117 @@ footer {
            color: #5DFC0A; /* Warna teks saat mode gelap */
            background: none; /* Tidak ada latar belakang untuk mode gelap */
             }
+            
+/* GENERATE */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px;
+    border: 1px solid #ddd;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 3px;
+    margin-right: auto;
+    display: block;
+}
+
+.result-container {
+    position: relative;
+    height: 100px;
+        border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    display: none; /* Default: sembunyikan kontainer */
+}
+
+.result-slider {
+    position: absolute;
+    top: 0; /* Set posisi awal */
+}
+
+.result-container {
+    position: relative;
+    height: 300px; 
+    overflow-y: scroll; /* Mengaktifkan scroll vertikal */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
 
 
+
+/* Contoh CSS untuk animasi */
+.animate {
+    animation: slideIn 1s ease-out; /* Ganti dengan animasi yang diinginkan */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+        button:hover {
+            background-color: red;
+        }
+       #result {
+            margin-top: 0px;
+            border: 1px solid #ddd;
+            overflow-y: auto;
+            flex-grow: 0px;
+            border-radius: 5px;
+            max-height: calc(100vh - 100px);
+            padding: 4px;
+            word-wrap: break-word;
+                width: 97%; /* Kurangi lebar kotak */
+            overflow-x: hidden;
+        }
+
+.style-item {
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: -15px; /* Tambahkan padding untuk menyesuaikan konten */
+    margin-bottom: 5px; /* Jarak antar item */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* Tambahkan aturan untuk panjang dan lebar */
+    width: 310px; 
+    max-width: 500px; 
+    height: auto; 
+    min-height: 0px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); 
+}
+
+
+        .copy-button {
+            display: inline-block;
+            padding: 3px 7px;
+            font-size: 12px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .copy-button:hover {
+            background-color: black;
+        }
+          
     </style>
 </head>
 <body>
@@ -288,7 +387,8 @@ footer {
         <textarea id="inputText" placeholder="Tulis teks di sini..."></textarea>
         
 
-<div class="button-container" style="display: flex; gap: 10px;">
+<div class="button-container" style="display: flex; gap: 10px;            margin-top: -5px; 
+">
   <button class="action-button salin" 
           onclick="copyText()" 
           style="background-color: #9C27B0; color: white; font-weight: bold; border-radius: 4px; width: 40px; height: 20px; display: flex; justify-content: center; align-items: center;"
@@ -336,25 +436,101 @@ footer {
           onmouseout="this.style.backgroundColor='#000000'; this.style.color='white';">
     ⇢
   </button>
-
-  <button class="action-button" 
-          onclick="moveUp()" 
-          style="background-color: #000000; color: white; font-weight: bold; border-radius: 4px; width: 40px; height: 20px; display: flex; justify-content: center; align-items: center;"
-          onmouseover="this.style.backgroundColor='#1F45FC'; this.style.color='white';" 
-          onmouseout="this.style.backgroundColor='#000000'; this.style.color='white';">
-    ⇡
-  </button>
-
-  <button class="action-button" 
-          onclick="moveDown()" 
-          style="background-color: #000000; color: white; font-weight: bold; border-radius: 4px; width: 40px; height: 20px; display: flex; justify-content: center; align-items: center;"
-          onmouseover="this.style.backgroundColor='#1F45FC'; this.style.color='white';" 
-          onmouseout="this.style.backgroundColor='#000000'; this.style.color='white';">
-    ⇣
-  </button>
-</div>
+    </div>
+        <div>
+<button id="generateButton" onclick="generateStyles()">Generate Styles</button>
+    <div class="result-container">
+        <div id="result" class="result-slider"></div>
+    </div>
 
 
+<script>
+    function generateStyles() {
+        const text = document.getElementById("inputText").value.trim();
+        const resultDiv = document.getElementById("result");
+        const generateButton = document.getElementById("generateButton");
+        const resultContainer = document.querySelector(".result-container");
+
+        if (!text) {
+            alert("Masukkan teks untuk menghasilkan gaya.");
+            return;
+        }
+
+        // Generate styles and display
+        resultDiv.innerHTML = ""; // Clear previous results
+
+        const styles = [
+            { name: "", style: (txt) => `${txt}︻ꔮ芅ﾃ༭ꕹᆖꔷ一一一一`},
+            { name: "☹️", style: (txt) => `${txt}☹️` },
+            { name: "✿✿", style: (txt) => `༺ꕤ༒${txt}༒ꕤ༻` },
+            { 
+                name: "Pola Vertikal ✿", 
+                style: (txt) => {
+                    const topBorder = "ꕤᜆꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻヽꕤ";
+                    const bottomBorder = "ꕤ乀＿＿＿＿＿＿＿＿＿ノꕤ";
+                    return `${topBorder}\n一＊ꕤ（ ${txt} ）ꕤ＊一\n${bottomBorder}`;
+                }
+            }
+        ];
+
+        styles.forEach(({ name, style }) => {
+            const div = document.createElement("div");
+            div.className = "style-item";
+            div.innerHTML = `
+                <span><strong>${name}:</strong></span>
+                <pre>${style(text)}</pre>
+            `;
+
+            const button = document.createElement("button");
+            button.className = "copy-button";
+            button.textContent = "Copy";
+            button.onclick = function() {
+                navigator.clipboard.writeText(style(text)).then(() => {
+                    alert("Teks berhasil disalin!");
+                }).catch(() => {
+                    alert("Gagal menyalin teks.");
+                });
+            };
+
+            div.appendChild(button);
+            resultDiv.appendChild(div);
+        });
+
+        // Aktifkan animasi slider
+        resultDiv.classList.add("animate");
+        resultContainer.style.display = "block"; // Tampilkan container
+
+        // After generating styles, change the button to 'Nonaktifkan'
+        generateButton.textContent = "Nonaktifkan";
+        generateButton.onclick = function() {
+            resultDiv.innerHTML = ''; // Hide generated styles
+            resultContainer.style.display = "none"; // Sembunyikan kontainer
+            resultDiv.classList.remove("animate"); // Hapus animasi
+            generateButton.textContent = "Generate Styles"; // Reset button text
+            generateButton.onclick = generateStyles; // Reset button functionality
+        };
+
+        // Menonaktifkan animasi saat scroll
+        let scrollTimeout;
+        window.addEventListener("scroll", function() {
+            // Hentikan animasi dengan mengubah style CSS untuk animasi
+            resultDiv.style.animation = "none"; // Nonaktifkan animasi
+
+            // Pastikan animasi kembali setelah scroll berhenti
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(function() {
+                resultDiv.style.animation = "0"; // Mengaktifkan kembali animasi
+            }, 0); // Mengaktifkan animasi kembali setelah 200ms scroll berhenti
+        });
+    }
+</script>
+
+
+</body>
+</html>
+
+
+        
         
 <div class="button-container" style="
     border: 1px solid #e6e6e6;
@@ -883,11 +1059,11 @@ footer {
         
     
        <!-- Keyboard kedua -->
-  <div class="button-container keyboard-2-container">
-    <button onclick="toggleSecondKeyboard()">
-        <span class="material-symbols-outlined">keyboard</span>Keyboard 2
-    </button>
-      </div>
+<div class="button-container keyboard-2-container">
+  <button id="toggleButton" onclick="toggleSecondKeyboard()">
+      <span class="material-symbols-outlined">keyboard</span><span id="buttonText">Keyboard 2</span>
+  </button>
+</div>
         <div id="secondKeyboard" class="keyboard">
     <button class="key-symbol">ᜆ</button>
 <button class="key-symbol">ヽ</button>
@@ -960,8 +1136,8 @@ footer {
     </div>
         
     <footer>Design Tommy | Versi 1.0</footer>
-    <hr>
-    
+
+
 <script>
   // Fungsi untuk menyalin teks
 function copyText() {
@@ -978,8 +1154,10 @@ function copyText() {
 // Fungsi untuk menghapus teks
 function clearText() {
     const textArea = document.getElementById("inputText");
-    textArea.value = "";
+    // Hapus satu karakter terakhir
+    textArea.value = textArea.value.slice(0, -1);
 }
+
 
 // Fungsi untuk menambahkan spasi
 function addSpace() {
@@ -1028,67 +1206,6 @@ function moveRight() {
     }
 }
 
-// Fungsi untuk memindahkan kursor ke atas (baris sebelumnya)
-function moveUp() {
-    const textArea = document.getElementById("inputText");
-    const lines = textArea.value.split("\n");
-    let cursorPos = textArea.selectionStart;
-
-    // Menemukan baris saat ini berdasarkan posisi kursor
-    let currentLine = 0;
-    let charCount = 0;
-
-    for (let i = 0; i < lines.length; i++) {
-        charCount += lines[i].length + 1;  // +1 untuk newline
-        if (charCount > cursorPos) {
-            currentLine = i;
-            break;
-        }
-    }
-
-    // Memindahkan kursor ke baris sebelumnya jika ada
-    if (currentLine > 0) {
-        let newPos = 0;
-        for (let i = 0; i < currentLine - 1; i++) {
-            newPos += lines[i].length + 1;  // +1 untuk newline
-        }
-        textArea.setSelectionRange(newPos, newPos);  // Set posisi kursor di baris sebelumnya
-        textArea.focus();
-    }
-}
-
-// Fungsi untuk memindahkan kursor ke bawah (baris berikutnya)
-function moveDown() {
-    const textArea = document.getElementById("inputText");
-    const lines = textArea.value.split("\n");
-    let cursorPos = textArea.selectionStart;
-
-    // Menemukan baris saat ini berdasarkan posisi kursor
-    let currentLine = 0;
-    let charCount = 0;
-
-    for (let i = 0; i < lines.length; i++) {
-        charCount += lines[i].length + 1;  // +1 untuk newline
-        if (charCount > cursorPos) {
-            currentLine = i;
-            break;
-        }
-    }
-
-    // Memindahkan kursor ke baris berikutnya jika ada
-    if (currentLine < lines.length - 1) {
-        let newPos = 0;
-        for (let i = 0; i <= currentLine; i++) {
-            newPos += lines[i].length + 1;  // +1 untuk newline
-        }
-        textArea.setSelectionRange(newPos, newPos);  // Set posisi kursor di baris berikutnya
-        textArea.focus();
-    }
-}
-
-
-
-
   // Mengatur tampilan keyboard pertama hanya saat pertama kali
   document.querySelectorAll('.keyboard').forEach((keyboard) => {
     keyboard.style.display = 'none';
@@ -1097,6 +1214,7 @@ function moveDown() {
   // Fungsi untuk menampilkan atau menyembunyikan keyboard berdasarkan ID
   function toggleKeyboard(keyboardId) {
     const keyboard = document.getElementById(keyboardId);
+    
     // Jika keyboard sudah tampil, sembunyikan
     if (keyboard.style.display === 'block') {
       keyboard.style.display = 'none';
@@ -1159,18 +1277,23 @@ document.getElementById('toggleExtraKeyboard').addEventListener('click', () => {
 
 
 <script>
-  // Fungsi untuk menambahkan teks ke textarea
-  function addText(text) {
-    const inputText = document.getElementById("inputText");
-    inputText.value += text;
-  }
-
-  // Fungsi untuk menampilkan/menyembunyikan keyboard kedua
+  // Fungsi untuk menampilkan/menyembunyikan keyboard kedua dan mengubah teks tombol
   function toggleSecondKeyboard() {
     const secondKeyboard = document.getElementById("secondKeyboard");
+    const buttonText = document.getElementById("buttonText");
+
+    // Menyembunyikan atau menampilkan keyboard kedua
     secondKeyboard.style.display = (secondKeyboard.style.display === "none" || secondKeyboard.style.display === "") ? "flex" : "none";
+
+    // Mengubah teks tombol menjadi "Nonaktifkan" atau kembali ke "Keyboard 2"
+    if (buttonText.innerText === "Keyboard 2") {
+      buttonText.innerText = "Nonaktifkan";
+    } else {
+      buttonText.innerText = "Keyboard 2";
+    }
   }
 </script>
+
     <script>
         // Mengubah mode gelap
         function toggleDarkMode() {
@@ -1183,7 +1306,8 @@ document.getElementById('toggleExtraKeyboard').addEventListener('click', () => {
             }
         }
     </script>
-      </body>
-        </html>
-        <h2>aplikasi masih dalam pengembangan</h2>
-<hr>
+ <body>
+   <html>
+     <h2>aplikasi masih dalam pengembangan</h2>
+  </body>
+ </html>
