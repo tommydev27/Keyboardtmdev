@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100;400;700&display=swap" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+      
     <title>tommy.developer</title>
     <style>
     
         body {
             font-family: Arial, sans-serif;
+            background-color: #ccdbd7;
+            border: 1px solid #89a8c7;
+            border-radius: 5px;
+
              }
 
            .profile-name {
-            font-size: 15px;
-            margin: 0px 100px 0;
+            font-size: 12px;
+      font-family: 'Orbitron', sans-serif;
+      margin-left: 13px;
             font-weight: bold;
             color: #333;
             }
-
-        .profile-name .material-symbols-outlined {
-            font-size: 13px;
-            color: white;
-            background-color: #007bff;
-            border-radius: 50%;
-            }
         
           .profile-name .container {
-           margin-bottom: 10px;
+           margin-bottom: 0px;
             }
 
           div button:hover {
@@ -43,7 +43,6 @@
             text-align: center;
             background-color: ;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 10px;
             }
 
@@ -52,7 +51,7 @@
             height: 130px;
             padding: 1px;
             font-size: 15px;
-            line-height: 1.2; /* Atur tinggi baris teks */
+            line-height: 1.0; /* Atur tinggi baris teks */
             text-indent: 0px;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -199,7 +198,7 @@
 
     /* Gaya untuk footer */
     footer {
-    font-size: 8px;
+    font-size: 12px;
     color: #007bff;
     z-index: 10;
     margin-top: 20px; 
@@ -229,7 +228,7 @@
         /* Gaya untuk mode gelap */
       .toggle-button {
             vertical-align: top; 
-            margin-top: -19px; 
+            margin-top: -30px; 
             margin-left: 90%;
               }
            .dark-mode .profile-name,
@@ -356,7 +355,7 @@ button {
             padding: 3px 7px;
             font-size: 12px;
             cursor: pointer;
-            background-color: #007bff;
+            background-color: #2F4F4F;
             color: white;
             border: none;
             border-radius: 5px;
@@ -373,9 +372,8 @@ button {
 </head>
 <body>
         <div class="header">
-        <p class="profile-name">Tommy Developer
-            <span class="material-symbols-outlined">check_circle</span>
-
+        <p class="profile-name">keyboard 2
+         </p >
         <div class="toggle-button" onclick="toggleDarkMode()">
             <span class="material-symbols-outlined" id="toggle_icon">toggle_off</span>
             
@@ -460,11 +458,11 @@ button {
         resultDiv.innerHTML = ""; // Clear previous results
 
         const styles = [
-            { name: "", style: (txt) => `${txt}︻ꔮ芅ﾃ༭ꕹᆖꔷ一一一一`},
-            { name: "☹️", style: (txt) => `${txt}☹️` },
-            { name: "✿✿", style: (txt) => `༺ꕤ༒${txt}༒ꕤ༻` },
+            { name: "font", style: (txt) => `${txt}︻ꔮ芅ﾃ༭ꕹᆖꔷ一一一一`},
+            { name: "font", style: (txt) => `${txt}☹️` },
+            { name: "font", style: (txt) => `༺ꕤ༒${txt}༒ꕤ༻` },
             { 
-                name: "Pola Vertikal ✿", 
+                name: "font", 
                 style: (txt) => {
                     const topBorder = "ꕤᜆꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻꣻヽꕤ";
                     const bottomBorder = "ꕤ乀＿＿＿＿＿＿＿＿＿ノꕤ";
