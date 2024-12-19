@@ -3,27 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dual Keboard Text </title>
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100;400;700&display=swap" />
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
       
-    <title>Dual Keboard Text </title>
+        <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
     <style>
-    
-        body {
-            font-family: Arial, sans-serif;
+          body {
+            font-family: 'Orbitron', sans-serif;
+            margin: center;
+            width: center;
+            padding: 0;
+            background-color: white;
+            align-items: center;
+        }
+             
+  /* Gaya media sosial */
+   .social-icons {
+    bottom: 0px;
+    display: flex;
+    margin-top: -10px;
+    margin-left: center;
+    gap: 16px;
 
-            border: 1px solid #89a8c7;
-            border-radius: 5px;
+}
 
-             }
+.social-icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: inherit;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+.social-icons .icon:hover {
+  animation: pulse 1.0s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 1px #ff0000;
+      color: white;
+    border-color: #ff0000;
+     background: #007bff;
+  }
+  50% {
+    transform: scale(0.5);
+    box-shadow: 0px 0px 1px #ff0000;
+  }
+  100% {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 1px #007bff;
+  }
+  }
+             
 
            .profile-name {
             font-size: 12px;
-      font-family: 'Orbitron', sans-serif;
-      margin-left: 13px;
+            font-family: 'Orbitron', sans-serif;
+            margin-top: -3px;
+            margin-left: 10px;
+            text-align: center;
             font-weight: bold;
-            color: #023961;
+            color: inherit;
             }
         
           .profile-name .container {
@@ -58,10 +112,10 @@
             margin: 0;
             box-sizing: border-box; 
             }
-          
+
             .button-container {
              display: flex;
-             gap: 45px;
+             gap: 47px;
              margin-top: 5px;
              overflow-x: auto; 
              white-space: nowrap; 
@@ -76,9 +130,8 @@
              font-size: 12px;
              margin: 1px;
              border: none;
-background-color: #007bff;
-color: white;
-
+             background-color: #007bff;
+             color: white;
              border-radius: 50px;
              cursor: pointer;
              gap: 5px;
@@ -94,7 +147,7 @@ color: white;
              gap: 5px;
              margin-top: 0px;
               }
-              
+
             .keyboard {
              width: 98%;
              gap: 0px; 
@@ -140,10 +193,8 @@ color: white;
               padding: 5px 5px;
               font-size: 12px;
               justify-content: flex-end;
-
-background-color: #007bff;
-color: white;
-
+              background-color: #007bff;
+              color: white;
               border-radius: 5px;
               cursor: pointer;
               transition: background-color 0.3s;
@@ -164,7 +215,7 @@ color: white;
     width: 97%;
     padding-left: 4px; 
     padding-top: 4px;
-    gap: 7px; /* Mengurangi jarak antar tombol */
+    gap: 7px; 
     max-height: 137px;
     overflow-y: auto;
     background-color: #89a8c7;
@@ -177,10 +228,9 @@ color: white;
     height: 30px;
     font-size: 14px;
     margin: -1px -2px;
-
     border-style: solid;
-  background-color: #ccdbd7;
-  box-shadow: 1px 1px 1px #5e7a73, -1px -1px 1px #ffffff;
+    background-color: #ccdbd7;
+    box-shadow: 1px 1px 1px #5e7a73, -1px -1px 1px #ffffff;
     color: black;
     margin-left: 0px;
     border-radius: 4px;
@@ -200,9 +250,8 @@ color: white;
         footer {
             margin: 15px;
             font-size: 10px;
-            color: #023961;
             font-weight: bold;
-          font-family: 'Orbitron', sans-serif;
+            font-family: 'Orbitron', sans-serif;
         }
 
   /* banner pilih huruf */
@@ -230,7 +279,6 @@ border: 1px solid #333;
     cursor: pointer;
     font-weight: bold;
     padding: 3px;
-
     padding-right: 5px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -242,7 +290,7 @@ border: 1px solid #333;
 .result-container {
     position: relative;
     height: 100px;
-        border-radius: 5px;
+    border-radius: 5px;
     overflow: hidden;
     border: 1px solid #333;
     margin-top: 5px;
@@ -251,7 +299,7 @@ border: 1px solid #333;
 
 .result-slider {
     position: absolute;
-    top: 0; /* Set posisi awal */
+    top: 0;
 }
 
 .result-container {
@@ -259,25 +307,23 @@ border: 1px solid #333;
     height: 300px; 
     overflow-y: scroll; /* Mengaktifkan scroll vertikal */
     border: 1px solid #6690ba;
-    background-color: white;
+    background-color: inherit;
     border-radius: 10px;
-}
-
-
+    }
 
 /* Contoh CSS untuk animasi */
 .animate {
-    animation: slideIn 1s ease-out; /* Ganti dengan animasi yang diinginkan */
-}
+    animation: slideIn 1s ease-out;
+    }
 
 @keyframes slideIn {
     from {
-        transform: translateX(-100%);
+    transform: translateX(-100%);
     }
     to {
-        transform: translateX(0);
+    transform: translateX(0);
     }
-}
+    }
 
         button:hover {
             background-color: red;
@@ -290,12 +336,11 @@ border: 1px solid #333;
             max-height: calc(100vh - 100px);
             padding: 4px;
             word-wrap: break-word;
-                width: 97%; /* Kurangi lebar kotak */
+            width: 97%; /* Kurangi lebar kotak */
             overflow-x: hidden;
         }
 
 .style-item {
-
     border: 1px solid #6690ba;
     border-radius: 8px;
     padding: -15px; /* Tambahkan padding untuk menyesuaikan konten */
@@ -312,7 +357,6 @@ border: 1px solid #333;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); 
 }
 
-
         .copy-button {
             display: inline-block;
             padding: 3px 7px;
@@ -323,66 +367,134 @@ border: 1px solid #333;
             border: none;
             border-radius: 5px;
             transition: background-color 0.3s;
-            margin-top: 10px;
+            margin-top: 0px;
             text-align: center;
         }
 
-        .copy-button:hover {
-            background-color: black;
+      .copy-button:hover {
+       background-color: black;
         }
           
-
-
-
 .profile-name {
     display: inline-block;
-        }
-        /* Gaya untuk mode gelap */
-      .toggle-button {
-            vertical-align: top; 
-            margin-top: -30px; 
-            margin-left: 90%;
-              }
-           .dark-mode .profile-name,
-           .dark-mode footer {
-            color: #5DFC0A;
-            }
+    }
 
-            .dark-mode {
-              background: black;
-              color: #333;
-              }
+/* Gaya untuk dark mode */
+body.dark-mode {
+  background-color: black;
+  color: #5DFC0A;
+}
 
-            #toggle-dark-mode {
-            position: absolute;
-            top: 50px;    /* Posisikan di bagian atas */
-            right: 0px;  /* Posisikan di pojok kanan */
-            color: #5DFC0A; /* Warna teks default */
-            padding: 8px;
-            background: none; /* Tidak ada latar belakang default */
-            border: none;
-            transition: background-color 0.3s ease;
-            transition: background-color 0.3s ease;
-                  }
+/* Gaya untuk ikon toggle */
+.menu-icon {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin-left: 40px; 
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 4px;
+  transition: background-color 0.8s;
+}
 
-          .dark-mode #toggle-dark-mode {
-           color: #5DFC0A; /* Warna teks saat mode gelap */
-           background: none; /* Tidak ada latar belakang untuk mode gelap */
-            }
-            
+.menu-icon.dark {
+  background-color: #333;
+  color: red;/* Hijau untuk dark mode aktif */
+}
+
+.menu-icon i {
+  position: absolute;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+  background-color: #5DFC0A;
+  border-radius: 50%;
+  transition: left 0.1s;
+}
+
+.menu-icon.dark i {
+  left: 12px; /* Geser ke kanan saat mode gelap aktif */
+}
+
+/*  mode on-of */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+/* on-of mode */
+.menu-icon {
+  width: 12px;
+  height: 8px;
+  font-size: 7px;
+  margin-right: 13px;
+  background-color: #ccc;
+  border-radius: 50px;
+  background-color: #ccdbd7;
+  border: 1px solid #89a8c7;
+}
+
+.darkmode-label {
+  font-size: 8px; 
+  color: #888;
+  text-align: center; 
+  margin-top: 12px; 
+}
+.menu-icon {
+  -webkit-tap-highlight-color: transparent; /* Menghapus highlight bawaan pada klik */
+  outline: none; /* Menghilangkan outline saat tombol dipilih */
+  user-select: none; /* Mencegah teks dapat diseleksi */
+  touch-action: manipulation; /* Optimasi untuk interaksi tombol */
+  display: flex;
+  border-radius: 50px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
 
     </style>
 </head>
 <body>
-        <div class="header">
-        <p class="profile-name">Dual Keyboard
-         </p >
-        <div class="toggle-button" onclick="toggleDarkMode()">
-            <span class="material-symbols-outlined" id="toggle_icon">toggle_off</span>
-            
-        </div>
+         
+<div class="profile-name"> </div>
+  <div class="social-icons">
+    
+   <div class="profile-name">Dual Keyboard
     </div>
-<hr>
+      <div class="icon instagram" onclick="navigateTo('https://tommydev27.github.io/tommy.website3/')">
+        <i class="far fa-image"></i>
+    </div>
+    <div class="icon youtube" onclick="navigateTo('https://tommydev27.github.io/tm-text/')">
+        <i class="fab fa-buysellads"></i>
+    </div>
+        <div class="icon facebook" onclick="navigateTo('https://tommydev27.github.io/Keyboardtmdev/')">
+        <i class="fas fa-keyboard"></i>
+    </div>
+    <div class="icon twitter" onclick="navigateTo('https://tommydev27.github.io/tommy.website-demo/')">
+        <i class="fab fa-mizuni"></i>
+    </div>
+    
+    
+<div class="menu-icon" id="darkModeToggle">
+  <i class="fas fa-circle"></i>
+
+<p class="darkmode-label">mode</p>
+
+    </div>
+</div>
+
+<div style="height: 1px; background-color: #ccc; width: 100%; margin-bottom: 8px; margin-top: 8px;"></div>
         </div>
    <div class="container">
         <textarea id="inputText" placeholder="Tulis teks di sini..."></textarea>
@@ -526,12 +638,8 @@ border: 1px solid #333;
     }
 </script>
 
-
 </body>
 </html>
-
-
-        
         
 <div class="button-container" style="
     border: 1px solid #89a8c7;
@@ -1137,7 +1245,7 @@ border: 1px solid #333;
     </div>
         
     <footer>Tommy Website | Design V.27</footer>
-
+<div style="height: 1px; background-color: #ccc; width: 100%; margin-bottom:5px;"></div>
 
 <script>
   // Fungsi untuk menyalin teks
@@ -1305,6 +1413,23 @@ document.getElementById('toggleExtraKeyboard').addEventListener('click', () => {
             } else {
                 toggleIcon.textContent = 'toggle_off';
             }
+        }
+        
+            // Mendapatkan elemen toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+// Menambahkan event listener untuk klik
+darkModeToggle.addEventListener('click', () => {
+  // Mengubah mode gelap di body
+  document.body.classList.toggle('dark-mode');
+
+  // Mengubah gaya tombol toggle
+  darkModeToggle.classList.toggle('dark');
+});
+
+        // **Navigasi Halaman**
+        function navigateTo(url) {
+            window.location.href = url; // Arahkan ke URL tujuan
         }
     </script>
 
