@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-      <meta name="google-site-verification" content="pwKvYalfLxSFwpDlCsan4yS_mEsUdJvUDrI2wKiIHXk" />
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta property="og:title" content="Tommy Website">
-        
-        <meta property="og:description" content="Create stunning AI-generated images with ease using Tommy APP.">
-        
-        <meta property="og:image" content="https://iili.io/2Q1S9x1.md.png">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        
-        <meta property="og:url" content="https://tommydev27.github.io/tommy.fb-web/">
-        
-        <meta property="og:type" content="website">
-        
-        <meta property="fb:app_id" content="1245016886587008">
-        
-        <title>Tommy Website</title>
-      
-        <link rel="stylesheet" href="style.css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-      
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82">
-        </script>
-        
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag('js', new Date());
-          gtag('config', 'G-FK1EY26W82');
-       </script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Tommy Website">
+    <meta property="og:description" content="Create stunning AI-generated images with ease using Tommy APP.">
+    <meta property="og:image" content="https://iili.io/2Q1S9x1.md.png">
+    <meta property="og:url" content="https://tommydev27.github.io/tommy.fb-web/">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1245016886587008">
+    <meta name="google-site-verification" content="pwKvYalfLxSFwpDlCsan4yS_mEsUdJvUDrI2wKiIHXk">
     
-           <style>
+    <title>Tommy Website</title>
+
+    <!-- CSS -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="customfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Font Face -->
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('customfont.woff2') format('woff2');
+            font-display: swap;
+            }
+           
             body {
             margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Arial', 'Segoe UI', 'Noto Sans', sans-serif;
              font-family: Arial, sans-serif;
               }
              
@@ -328,15 +318,31 @@
           .profile-name {
             display: inline-block;
             }
+          
+    </style>
 
-        </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-FK1EY26W82');
+      </script>
     </head>
       <body>
-         <div class="container">
-           
-         <div class="profile-name">Keyboard <i style="font-size: 14px; color: #0073eff9;" class="fab fa-dev"></i> <a style="font-size: 10px; color: #0073eff9; margin-left: 75px" >Design web : Tommy Dev | V0.1.0 </a>
-       </div>
-
+        <div class="container">
+          <div class="profile-name">
+          Keyboard 
+            <a href="https://tommydev27.github.io/tommy.fb-web/" target="_blank" style="text-decoration: none;">
+              <i style="font-size: 15px; color: #0073eff9;" class="fab fa-dev"></i>
+          </a> 
+          <a style="font-size: 10px; color: #0073eff9; margin-left: 75px; text-decoration: none;">
+              Design web : Tommy Dev | V0.1.0
+          </a>
+      </div>
+      
         <textarea id="inputText" placeholder="Tulis teks di sini..."></textarea>
         
       <div class="button-container" style="display: flex; gap: 10px;            margin-top: -5px;">
@@ -562,11 +568,11 @@ style: (txt) => `
         
    <div class="button-container keyboard-2-container">
      
-      <button id="letters">
-          <i  class="far fa-keyboard"></i></span>Keyboard 1
+    <button id="letters" onclick="toggleKeyboard()">
+    <i class="far fa-keyboard"></i>       <span>Keyboard 1</span>
           </button>
       </div>
-          <div id="keyboard" class="keyboard">
+       <div id="keyboard" class="keyboard">
             <!-- Tombol huruf -->
     <button class="key">Ａ</button>
     <button class="key">Ｂ</button>
@@ -667,6 +673,117 @@ style: (txt) => `
 <button class="key">𝐱</button>
 <button class="key">𝐲</button>
 <button class="key">𝐳</button>
+    <button class="key-symbol">🅐</button>
+    <button class="key-symbol">🅑</button>
+    <button class="key-symbol">🅒</button>
+    <button class="key-symbol">🅓</button>
+    <button class="key-symbol">🅔</button>
+    <button class="key-symbol">🅕</button>
+    <button class="key-symbol">🅖</button>
+    <button class="key-symbol">🅗</button>
+    <button class="key-symbol">🅘</button>
+    <button class="key-symbol">🅙</button>
+    <button class="key-symbol">🅚</button>
+    <button class="key-symbol">🅛</button>
+    <button class="key-symbol">🅜</button>
+    <button class="key-symbol">🅝</button>
+    <button class="key-symbol">🅞</button>
+    <button class="key-symbol">🅟</button>
+    <button class="key-symbol">🅠</button>
+    <button class="key-symbol">🅡</button>
+    <button class="key-symbol">🅢</button>
+    <button class="key-symbol">🅣</button>
+    <button class="key-symbol">🅤</button>
+    <button class="key-symbol">🅥</button>
+    <button class="key-symbol">🅦</button>
+    <button class="key-symbol">🅧</button>
+    <button class="key-symbol">🅨</button>
+    <button class="key-symbol">🅩</button>
+    
+    <!-- Baris kedua -->
+    <button class="key-symbol">Ⓐ</button>
+    <button class="key-symbol">Ⓑ</button>
+    <button class="key-symbol">Ⓒ</button>
+    <button class="key-symbol">Ⓓ</button>
+    <button class="key-symbol">Ⓔ</button>
+    <button class="key-symbol">Ⓕ</button>
+    <button class="key-symbol">Ⓖ</button>
+    <button class="key-symbol">Ⓗ</button>
+    <button class="key-symbol">Ⓘ</button>
+    <button class="key-symbol">Ⓙ</button>
+    <button class="key-symbol">Ⓚ</button>
+    <button class="key-symbol">Ⓛ</button>
+    <button class="key-symbol">Ⓜ</button>
+    <button class="key-symbol">Ⓝ</button>
+    <button class="key-symbol">Ⓞ</button>
+    <button class="key-symbol">Ⓟ</button>
+    <button class="key-symbol">Ⓠ</button>
+    <button class="key-symbol">Ⓡ</button>
+    <button class="key-symbol">Ⓢ</button>
+    <button class="key-symbol">Ⓣ</button>
+    <button class="key-symbol">Ⓤ</button>
+    <button class="key-symbol">Ⓥ</button>
+    <button class="key-symbol">Ⓦ</button>
+    <button class="key-symbol">Ⓧ</button>
+    <button class="key-symbol">Ⓨ</button>
+    <button class="key-symbol">Ⓩ</button>
+
+    <!-- Baris ketiga -->
+    <button class="key-symbol">🅰</button>
+    <button class="key-symbol">🅱</button>
+    <button class="key-symbol">🅲</button>
+    <button class="key-symbol">🅳</button>
+    <button class="key-symbol">🅴</button>
+    <button class="key-symbol">🅵</button>
+    <button class="key-symbol">🅶</button>
+    <button class="key-symbol">🅷</button>
+    <button class="key-symbol">🅸</button>
+    <button class="key-symbol">🅹</button>
+    <button class="key-symbol">🅺</button>
+    <button class="key-symbol">🅻</button>
+    <button class="key-symbol">🅼</button>
+    <button class="key-symbol">🅽</button>
+    <button class="key-symbol">🅾</button>
+    <button class="key-symbol">🅿</button>
+    <button class="key-symbol">🆀</button>
+    <button class="key-symbol">🆁</button>
+    <button class="key-symbol">🆂</button>
+    <button class="key-symbol">🆃</button>
+    <button class="key-symbol">🆄</button>
+    <button class="key-symbol">🆅</button>
+    <button class="key-symbol">🆆</button>
+    <button class="key-symbol">🆇</button>
+    <button class="key-symbol">🆈</button>
+    <button class="key-symbol">🆉</button>
+    
+    <!-- Baris keempat -->
+    <button class="key-symbol">🄰</button>
+    <button class="key-symbol">🄱</button>
+    <button class="key-symbol">🄲</button>
+    <button class="key-symbol">🄳</button>
+    <button class="key-symbol">🄴</button>
+    <button class="key-symbol">🄵</button>
+    <button class="key-symbol">🄶</button>
+    <button class="key-symbol">🄷</button>
+    <button class="key-symbol">🄸</button>
+    <button class="key-symbol">🄹</button>
+    <button class="key-symbol">🄺</button>
+    <button class="key-symbol">🄻</button>
+    <button class="key-symbol">🄼</button>
+    <button class="key-symbol">🄽</button>
+    <button class="key-symbol">🄾</button>
+    <button class="key-symbol">🄿</button>
+    <button class="key-symbol">🅀</button>
+    <button class="key-symbol">🅁</button>
+    <button class="key-symbol">🅂</button>
+    <button class="key-symbol">🅃</button>
+    <button class="key-symbol">🅄</button>
+    <button class="key-symbol">🅅</button>
+    <button class="key-symbol">🅆</button>
+    <button class="key-symbol">🅇</button>
+    <button class="key-symbol">🅈</button>
+    <button class="key-symbol">🅉</button>
+
 <!-- Huruf besar 𝔸-ℤ -->
 <button class="key">𝔸</button>
 <button class="key">𝔹</button>
@@ -2119,116 +2236,132 @@ style: (txt) => `
             <!-- Tombol simbol -->
 
     <!-- Baris pertama -->
-    <button class="key-symbol">🅐</button>
-    <button class="key-symbol">🅑</button>
-    <button class="key-symbol">🅒</button>
-    <button class="key-symbol">🅓</button>
-    <button class="key-symbol">🅔</button>
-    <button class="key-symbol">🅕</button>
-    <button class="key-symbol">🅖</button>
-    <button class="key-symbol">🅗</button>
-    <button class="key-symbol">🅘</button>
-    <button class="key-symbol">🅙</button>
-    <button class="key-symbol">🅚</button>
-    <button class="key-symbol">🅛</button>
-    <button class="key-symbol">🅜</button>
-    <button class="key-symbol">🅝</button>
-    <button class="key-symbol">🅞</button>
-    <button class="key-symbol">🅟</button>
-    <button class="key-symbol">🅠</button>
-    <button class="key-symbol">🅡</button>
-    <button class="key-symbol">🅢</button>
-    <button class="key-symbol">🅣</button>
-    <button class="key-symbol">🅤</button>
-    <button class="key-symbol">🅥</button>
-    <button class="key-symbol">🅦</button>
-    <button class="key-symbol">🅧</button>
-    <button class="key-symbol">🅨</button>
-    <button class="key-symbol">🅩</button>
+    <button class="key-symbol">͞</button>
+    <button class="key-symbol">͟</button>
+    <button class="key-symbol">͝</button>
+    <button class="key-symbol">͜</button>
+    <button class="key-symbol">͡</button>
+    <button class="key-symbol">͠</button>
+    <button class="key-symbol">͢</button>
+    <button class="key-symbol">͇</button>
+    <button class="key-symbol">̿</button>
+    <button class="key-symbol">̳</button>
+    <button class="key-symbol">̴</button>
+    <button class="key-symbol">̵</button>
+    <button class="key-symbol">̲</button>
+    <button class="key-symbol">̱</button>
+    <button class="key-symbol">̰</button>
+    <button class="key-symbol">͙</button>
+    <button class="key-symbol">͚</button>
+    <button class="key-symbol">͕</button>
+    <button class="key-symbol">͔</button>
+    <button class="key-symbol">͎</button>
+    <button class="key-symbol">͍</button>
+    <button class="key-symbol">͌</button>
+    <button class="key-symbol">͓</button>
+    <button class="key-symbol">͋</button>
+    <button class="key-symbol">͂</button>
+    <button class="key-symbol">̀</button>
     
     <!-- Baris kedua -->
-    <button class="key-symbol">Ⓐ</button>
-    <button class="key-symbol">Ⓑ</button>
-    <button class="key-symbol">Ⓒ</button>
-    <button class="key-symbol">Ⓓ</button>
-    <button class="key-symbol">Ⓔ</button>
-    <button class="key-symbol">Ⓕ</button>
-    <button class="key-symbol">Ⓖ</button>
-    <button class="key-symbol">Ⓗ</button>
-    <button class="key-symbol">Ⓘ</button>
-    <button class="key-symbol">Ⓙ</button>
-    <button class="key-symbol">Ⓚ</button>
-    <button class="key-symbol">Ⓛ</button>
-    <button class="key-symbol">Ⓜ</button>
-    <button class="key-symbol">Ⓝ</button>
-    <button class="key-symbol">Ⓞ</button>
-    <button class="key-symbol">Ⓟ</button>
-    <button class="key-symbol">Ⓠ</button>
-    <button class="key-symbol">Ⓡ</button>
-    <button class="key-symbol">Ⓢ</button>
-    <button class="key-symbol">Ⓣ</button>
-    <button class="key-symbol">Ⓤ</button>
-    <button class="key-symbol">Ⓥ</button>
-    <button class="key-symbol">Ⓦ</button>
-    <button class="key-symbol">Ⓧ</button>
-    <button class="key-symbol">Ⓨ</button>
-    <button class="key-symbol">Ⓩ</button>
+    <button class="key-symbol">́</button>
+    <button class="key-symbol">͆</button>
+    <button class="key-symbol">̺</button>
+    <button class="key-symbol"≯</button>
+    <button class="key-symbol">̷</button>
+    <button class="key-symbol">̶</button>
+    <button class="key-symbol">̖</button>
+    <button class="key-symbol">̗</button>
+    <button class="key-symbol">̏</button>
+    <button class="key-symbol">̋</button>
+    <button class="key-symbol">˵</button>
+    <button class="key-symbol">˶</button>
+    <button class="key-symbol">ˁ</button>
+    <button class="key-symbol">ˀ</button>
+    <button class="key-symbol">⃔</button>
+    <button class="key-symbol">⃕</button>
+    <button class="key-symbol">⃘</button>
+    <button class="key-symbol">⃙</button>
+    <button class="key-symbol">⃚</button>
+    <button class="key-symbol">⃛</button>
+    <button class="key-symbol">⃜</button>
+    <button class="key-symbol">⃝</button>
+    <button class="key-symbol">⃞</button>
+    <button class="key-symbol">⃟</button>
+    <button class="key-symbol">⃠</button>
+    <button class="key-symbol">⃢</button>
 
     <!-- Baris ketiga -->
-    <button class="key-symbol">🅰</button>
-    <button class="key-symbol">🅱</button>
-    <button class="key-symbol">🅲</button>
-    <button class="key-symbol">🅳</button>
-    <button class="key-symbol">🅴</button>
-    <button class="key-symbol">🅵</button>
-    <button class="key-symbol">🅶</button>
-    <button class="key-symbol">🅷</button>
-    <button class="key-symbol">🅸</button>
-    <button class="key-symbol">🅹</button>
-    <button class="key-symbol">🅺</button>
-    <button class="key-symbol">🅻</button>
-    <button class="key-symbol">🅼</button>
-    <button class="key-symbol">🅽</button>
-    <button class="key-symbol">🅾</button>
-    <button class="key-symbol">🅿</button>
-    <button class="key-symbol">🆀</button>
-    <button class="key-symbol">🆁</button>
-    <button class="key-symbol">🆂</button>
-    <button class="key-symbol">🆃</button>
-    <button class="key-symbol">🆄</button>
-    <button class="key-symbol">🆅</button>
-    <button class="key-symbol">🆆</button>
-    <button class="key-symbol">🆇</button>
-    <button class="key-symbol">🆈</button>
-    <button class="key-symbol">🆉</button>
+    <button class="key-symbol">⃣</button>
+    <button class="key-symbol">⃤</button>
+    <button class="key-symbol">⃥</button>
+    <button class="key-symbol">⃦</button>
+    <button class="key-symbol">⃧</button>
+    <button class="key-symbol">⃪</button>
+    <button class="key-symbol">⃫</button>
+    <button class="key-symbol">⃮</button>
+    <button class="key-symbol">⃯</button>
+    <button class="key-symbol">︠</button>
+    <button class="key-symbol">︡</button>
+    <button class="key-symbol">︢</button>
+    <button class="key-symbol">︣</button>
+    <button class="key-symbol">︤</button>
+    <button class="key-symbol">︥</button>
+    <button class="key-symbol">︦</button>
+    <button class="key-symbol">༼</button>
+    <button class="key-symbol">༽</button>
+    <button class="key-symbol">๛</button>
+    <button class="key-symbol">ੈ</button>
+    <button class="key-symbol">ੂ</button>
+    <button class="key-symbol">ੑ</button>
+    <button class="key-symbol">ਂ</button>
+    <button class="key-symbol">ਿ</button>
+    <button class="key-symbol">ੀ</button>
+    <button class="key-symbol">៚</button>
     
     <!-- Baris keempat -->
-    <button class="key-symbol">🄰</button>
-    <button class="key-symbol">🄱</button>
-    <button class="key-symbol">🄲</button>
-    <button class="key-symbol">🄳</button>
-    <button class="key-symbol">🄴</button>
-    <button class="key-symbol">🄵</button>
-    <button class="key-symbol">🄶</button>
-    <button class="key-symbol">🄷</button>
-    <button class="key-symbol">🄸</button>
-    <button class="key-symbol">🄹</button>
-    <button class="key-symbol">🄺</button>
-    <button class="key-symbol">🄻</button>
-    <button class="key-symbol">🄼</button>
-    <button class="key-symbol">🄽</button>
-    <button class="key-symbol">🄾</button>
-    <button class="key-symbol">🄿</button>
-    <button class="key-symbol">🅀</button>
-    <button class="key-symbol">🅁</button>
-    <button class="key-symbol">🅂</button>
-    <button class="key-symbol">🅃</button>
-    <button class="key-symbol">🅄</button>
-    <button class="key-symbol">🅅</button>
-    <button class="key-symbol">🅆</button>
-    <button class="key-symbol">🅇</button>
-    <button class="key-symbol">🅈</button>
-    <button class="key-symbol">🅉</button>
+    <button class="key-symbol">ਓ</button>
+    <button class="key-symbol">ਊ</button>
+    <button class="key-symbol">᷀</button>
+    <button class="key-symbol">᷁</button>
+    <button class="key-symbol">᷃</button>
+    <button class="key-symbol">᷄</button>
+    <button class="key-symbol">᷅</button>
+    <button class="key-symbol">᷆</button>
+    <button class="key-symbol">᷇</button>
+    <button class="key-symbol">᷈</button>
+    <button class="key-symbol">᷉</button>
+    <button class="key-symbol">᷊</button>
+    <button class="key-symbol">᷍</button>
+    <button class="key-symbol">῁</button>
+    <button class="key-symbol">‐</button>
+    <button class="key-symbol">‑</button>
+    <button class="key-symbol">‒</button>
+    <button class="key-symbol">–</button>
+    <button class="key-symbol">—</button>
+    <button class="key-symbol">―</button>
+    <button class="key-symbol">‾</button>
+    <button class="key-symbol">⁄</button>
+    <button class="key-symbol">៰</button>
+    <button class="key-symbol">៱</button>
+    <button class="key-symbol">៲</button>
+    <button class="key-symbol">៳</button>
+        <button class="key-symbol">៴</button>
+    <button class="key-symbol">៵</button>
+    <button class="key-symbol">៶</button>
+    <button class="key-symbol">៸</button>
+    <button class="key-symbol">៷</button>
+    <button class="key-symbol">៹</button>
+    <button class="key-symbol">⎰</button>
+    <button class="key-symbol">⎱</button>
+    <button class="key-symbol">⎶</button>
+    <button class="key-symbol">⎴</button>
+    <button class="key-symbol">⎵</button>
+    <button class="key-symbol">␇</button>
+    <button class="key-symbol">␀</button>
+    <button class="key-symbol">␔</button>
+    <button class="key-symbol">␜</button>
+    
 </div>
 
 
@@ -2526,36 +2659,29 @@ style: (txt) => `
 <button class="key-symbol">｣</button>
 <button class="key-symbol">〈</button>
 <button class="key-symbol">〉</button>
-<button class="key-symbol">ꕢ</button>
-<button class="key-symbol">ꕤ</button>
-<button class="key-symbol">߷</button>
-<button class="key-symbol">፨</button>
-<button class="key-symbol">ꗴ</button>
-<button class="key-symbol">＊</button>
-<button class="key-symbol">﹅</button>
-<button class="key-symbol">༺</button>
-<button class="key-symbol">༒</button>
-<button class="key-symbol">༻</button>
-<button class="key-symbol">༄</button>
-<button class="key-symbol">﹆</button>
-<button class="key-symbol">ヽ</button>
-<button class="key-symbol">〇</button>
-<button class="key-symbol">〬</button>
-<button class="key-symbol">〭</button>
-<button class="key-symbol">〪</button>
-<button class="key-symbol">〫</button>
-<button class="key-symbol">༊</button>
-<button class="key-symbol">〼</button>
-<button class="key-symbol">ෂ</button>
-<button class="key-symbol">ꕬ</button>
-<button class="key-symbol">ꛃ</button>
-<button class="key-symbol">ཊ</button>
-<button class="key-symbol">ཏ</button>
-<button class="key-symbol">ཤ</button>
-<button class="key-symbol">ཥ</button>
-<button class="key-symbol">ꛘ</button>
-<button class="key-symbol">ʬ</button>
-<button class="key-symbol">ꖯ</button>
+<button class="key-symbol">⦂</button>
+<button class="key-symbol">⦃</button>
+<button class="key-symbol">⦄</button>
+<button class="key-symbol">⦅</button>
+<button class="key-symbol">⦆</button>
+<button class="key-symbol">⦇</button>
+<button class="key-symbol">⦈</button>
+<button class="key-symbol">⦉</button>
+<button class="key-symbol">⦊</button>
+<button class="key-symbol">⦋</button>
+<button class="key-symbol">⦌</button>
+<button class="key-symbol">⦑</button>
+<button class="key-symbol">⦒</button>
+<button class="key-symbol">⦓</button>
+<button class="key-symbol">⦔</button>
+<button class="key-symbol">⦕</button>
+<button class="key-symbol">⦖</button>
+<button class="key-symbol">⦗</button>
+<button class="key-symbol">⦘</button>
+<button class="key-symbol">⦙</button>
+<button class="key-symbol">⦚</button>
+<button class="key-symbol">⧼</button>
+<button class="key-symbol">⧽</button>
 <button class="key-symbol">〈</button>
 <button class="key-symbol">〉</button>
 <button class="key-symbol">《</button>
@@ -2610,6 +2736,166 @@ style: (txt) => `
 <button class="key-symbol">›</button>
 <button class="key-symbol">〈</button>
 <button class="key-symbol">〉</button>
+<button class="key-symbol">ꕢ</button>
+<button class="key-symbol">ꕤ</button>
+<button class="key-symbol">߷</button>
+<button class="key-symbol">፨</button>
+<button class="key-symbol">ꗴ</button>
+<button class="key-symbol">＊</button>
+<button class="key-symbol">﹅</button>
+<button class="key-symbol">༺</button>
+<button class="key-symbol">༒</button>
+<button class="key-symbol">༻</button>
+<button class="key-symbol">༄</button>
+<button class="key-symbol">﹆</button>
+<button class="key-symbol">ヽ</button>
+<button class="key-symbol">〇</button>
+<button class="key-symbol">〬</button>
+<button class="key-symbol">〭</button>
+<button class="key-symbol">〪</button>
+<button class="key-symbol">〫</button>
+<button class="key-symbol">༊</button>
+<button class="key-symbol">〼</button>
+<button class="key-symbol">ෂ</button>
+<button class="key-symbol">ꕬ</button>
+<button class="key-symbol">ꛃ</button>
+<button class="key-symbol">ཊ</button>
+<button class="key-symbol">ཏ</button>
+<button class="key-symbol">ཤ</button>
+<button class="key-symbol">ཥ</button>
+<button class="key-symbol">ꛘ</button>
+<button class="key-symbol">ʬ</button>
+<button class="key-symbol">ꖯ</button>
+<button class="key-symbol">ꩧ</button>
+<button class="key-symbol">ꩩ</button>
+<button class="key-symbol">ꩪ</button>
+<button class="key-symbol">ꩬ</button>
+<button class="key-symbol">ꩰ</button>
+<button class="key-symbol">෴</button>
+<button class="key-symbol">෨</button>
+<button class="key-symbol">෯</button>
+<button class="key-symbol">෫</button>
+<button class="key-symbol">ප</button>
+<button class="key-symbol">ද</button>
+<button class="key-symbol">๏</button>
+<button class="key-symbol">ອ</button>
+<button class="key-symbol">ຮ</button>
+<button class="key-symbol">ຯ</button>
+<button class="key-symbol">໐</button>
+<button class="key-symbol">໑</button>
+<button class="key-symbol">໒</button>
+<button class="key-symbol">༎</button>
+<button class="key-symbol">༏</button>
+<button class="key-symbol">༑</button>
+<button class="key-symbol">ཽ</button>
+<button class="key-symbol">ོ</button>
+<button class="key-symbol">ྊ</button>
+<button class="key-symbol">ྋ</button>
+<button class="key-symbol">࿐</button>
+<button class="key-symbol">ጸ</button>
+<button class="key-symbol">ፀ</button>
+<button class="key-symbol">፝</button>
+<button class="key-symbol">፡</button>
+<button class="key-symbol">።</button>
+<button class="key-symbol">፤</button>
+<button class="key-symbol">፧</button>
+<button class="key-symbol">፨</button>
+<button class="key-symbol">፬</button>
+<button class="key-symbol">፲</button>
+<button class="key-symbol">፯</button>
+<button class="key-symbol">፺</button>
+<button class="key-symbol">፶</button>
+<button class="key-symbol">፩</button>
+<button class="key-symbol">፶</button>
+<button class="key-symbol">፸</button>
+<button class="key-symbol">፪</button>
+<button class="key-symbol">ᜊ</button>
+<button class="key-symbol">ᜃ</button>
+<button class="key-symbol">ᜑ</button>
+<button class="key-symbol">ᱪ</button>
+<button class="key-symbol">ᱫ</button>
+<button class="key-symbol">ᱬ</button>
+<button class="key-symbol">ᱦ</button>
+<button class="key-symbol">ᱯ</button>
+<button class="key-symbol">ᱰ</button>
+<button class="key-symbol">ᱵ</button>
+<button class="key-symbol">ᱺ</button>
+<button class="key-symbol">Ტ</button>
+<button class="key-symbol">ᴥ</button>
+<button class="key-symbol">ᵜ</button>
+<button class="key-symbol">⧲</button>
+<button class="key-symbol">⧳</button>
+<button class="key-symbol">⧰</button>
+<button class="key-symbol">⧱</button>
+<button class="key-symbol">⧬</button>
+<button class="key-symbol">⧭</button>
+<button class="key-symbol">⨝</button>
+<button class="key-symbol">⨷</button>
+<button class="key-symbol">⨸</button>
+<button class="key-symbol">⩉</button>
+<button class="key-symbol">⩍</button>
+<button class="key-symbol">⩀</button>
+<button class="key-symbol">⩷</button>
+<button class="key-symbol">⩶</button>
+<button class="key-symbol">⩴</button>
+<button class="key-symbol">⫘</button>
+<button class="key-symbol">⫗</button>
+<button class="key-symbol">⫷</button>
+<button class="key-symbol">⫸</button>
+<button class="key-symbol">⫹</button>
+<button class="key-symbol">⫺</button>
+<button class="key-symbol">⬢</button>
+<button class="key-symbol">⬡</button>
+<button class="key-symbol">⬮</button>
+<button class="key-symbol">⬯</button>
+<button class="key-symbol">⬬</button>
+<button class="key-symbol">⬭</button>
+<button class="key-symbol">⭖</button>
+<button class="key-symbol">⭗</button>
+<button class="key-symbol">⭕</button>
+<button class="key-symbol">䷚</button>
+<button class="key-symbol">个</button>
+<button class="key-symbol">丿</button>
+<button class="key-symbol">囪</button>
+<button class="key-symbol">圓</button>
+<button class="key-symbol">圝</button>
+<button class="key-symbol">囬</button>
+<button class="key-symbol">囜</button>
+<button class="key-symbol">図</button>
+<button class="key-symbol">࿕</button>
+<button class="key-symbol">࿖</button>
+<button class="key-symbol">࿗</button>
+<button class="key-symbol">࿘</button>
+<button class="key-symbol">࿙</button>
+<button class="key-symbol">࿒</button>
+<button class="key-symbol">࿚</button>
+<button class="key-symbol">࿆</button>
+<button class="key-symbol">ြ</button>
+<button class="key-symbol">ၜ</button>
+<button class="key-symbol">ტ</button>
+<button class="key-symbol">ჯ</button>
+<button class="key-symbol">წ</button>
+<button class="key-symbol"></button>
+<button class="key-symbol"></button>
+<button class="key-symbol">⟢</button>
+<button class="key-symbol">⟣</button>
+<button class="key-symbol">⟤</button>
+<button class="key-symbol">⟥</button>
+<button class="key-symbol">⟡</button>
+<button class="key-symbol">⟠</button>
+<button class="key-symbol">⟴</button>
+<button class="key-symbol">⟵</button>
+<button class="key-symbol">⟶</button>
+<button class="key-symbol">⟸</button>
+<button class="key-symbol">⟹</button>
+<button class="key-symbol">⵿</button>
+<button class="key-symbol">⸨</button>
+<button class="key-symbol">⸩</button>
+<button class="key-symbol">⸺</button>
+<button class="key-symbol">⸻</button>
+<button class="key-symbol">⺫</button>
+<button class="key-symbol">⺣</button>
+<button class="key-symbol">⼆</button>
 <button class="key-symbol">〱</button>
 <button class="key-symbol">✓</button>
 <button class="key-symbol">✔</button>
@@ -2739,7 +3025,6 @@ style: (txt) => `
 <button class="key-symbol">🝱</button>
 <button class="key-symbol">🝲</button>
 <button class="key-symbol">🝳</button>
-
 <button class="key-symbol">✇</button>
 <button class="key-symbol">☐</button>
 <button class="key-symbol">☑</button>
@@ -3932,54 +4217,45 @@ style: (txt) => `
     </div>
       
 <script>
-  // Fungsi untuk menyalin teks
 function copyText() {
     const textArea = document.getElementById("inputText");
     textArea.select();
-    textArea.setSelectionRange(0, 99999);  // Untuk perangkat mobile
+    textArea.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(textArea.value).then(() => {
         alert("Teks telah disalin!");
-    }).catch(err => {
+    }).catch(() => {
         alert("Gagal menyalin teks.");
     });
 }
 
-// Fungsi untuk menghapus teks
 function clearText() {
     const textArea = document.getElementById("inputText");
-    // Hapus satu karakter terakhir
-    textArea.value = textArea.value.slice(0, -1);
+    let cursorPos = textArea.selectionStart;
+    if (cursorPos > 0) {
+        textArea.value = textArea.value.slice(0, cursorPos - 1) + textArea.value.slice(cursorPos);
+        textArea.setSelectionRange(cursorPos - 1, cursorPos - 1);
+        textArea.focus();
+    }
 }
 
+function insertTextAtCursor(text) {
+    const textArea = document.getElementById("inputText");
+    let cursorPos = textArea.selectionStart;
+    let textBefore = textArea.value.substring(0, cursorPos);
+    let textAfter = textArea.value.substring(cursorPos);
+    textArea.value = textBefore + text + textAfter;
+    textArea.setSelectionRange(cursorPos + text.length, cursorPos + text.length);
+    textArea.focus();
+}
 
-// Fungsi untuk menambahkan spasi
 function addSpace() {
-    const textArea = document.getElementById("inputText");
-    let cursorPos = textArea.selectionStart;
-    let textBefore = textArea.value.substring(0, cursorPos);
-    let textAfter = textArea.value.substring(cursorPos);
-    
-    // Menambahkan spasi setelah kursor
-    textArea.value = textBefore + " " + textAfter;
-    
-    // Menjaga kursor tetap setelah spasi
-    textArea.setSelectionRange(cursorPos + 1, cursorPos + 1);
-    textArea.focus();
+    insertTextAtCursor(" ");
 }
 
-
-// Fungsi untuk menambahkan Enter (newline)
 function addEnter() {
-    const textArea = document.getElementById("inputText");
-    let cursorPos = textArea.selectionStart;
-    let textBefore = textArea.value.substring(0, cursorPos);
-    let textAfter = textArea.value.substring(cursorPos);
-    textArea.value = textBefore + "\n" + textAfter;  // Menambahkan Enter
-    textArea.setSelectionRange(cursorPos + 1, cursorPos + 1);
-    textArea.focus();
+    insertTextAtCursor("\n");
 }
 
-// Fungsi untuk memindahkan kursor ke kiri
 function moveLeft() {
     const textArea = document.getElementById("inputText");
     let cursorPos = textArea.selectionStart;
@@ -3989,7 +4265,6 @@ function moveLeft() {
     }
 }
 
-// Fungsi untuk memindahkan kursor ke kanan
 function moveRight() {
     const textArea = document.getElementById("inputText");
     let cursorPos = textArea.selectionStart;
@@ -3999,93 +4274,51 @@ function moveRight() {
     }
 }
 
-  // Mengatur tampilan keyboard pertama hanya saat pertama kali
-  document.querySelectorAll('.keyboard').forEach((keyboard) => {
+document.querySelectorAll('.keyboard').forEach(keyboard => {
     keyboard.style.display = 'none';
-  });
+});
 
-  // Fungsi untuk menampilkan atau menyembunyikan keyboard berdasarkan ID
+
   function toggleKeyboard(keyboardId) {
     const keyboard = document.getElementById(keyboardId);
     
-    // Jika keyboard sudah tampil, sembunyikan
     if (keyboard.style.display === 'block') {
       keyboard.style.display = 'none';
     } else {
-      // Sembunyikan semua keyboard lain
+      
       document.querySelectorAll('.keyboard').forEach((keyboard) => {
         keyboard.style.display = 'none';
       });
-      // Tampilkan keyboard yang dipilih
+      
       keyboard.style.display = 'block';
     }
   }
 
-  // Menambahkan event listener untuk setiap kategori keyboard
-  document.getElementById('letters').addEventListener('click', function() {
-    toggleKeyboard('keyboard');
-  });
-
-  document.getElementById('numbers').addEventListener('click', function() {
-    toggleKeyboard('numberKeyboard');
-  });
-
-  document.getElementById('symbols').addEventListener('click', function() {
-    toggleKeyboard('symbolKeyboard');
-  });
-
-  document.getElementById('capitalLetters').addEventListener('click', function() {
-    toggleKeyboard('capitalKeyboard');
-  });
-  
-  // Menambahkan event listener untuk setiap tombol keyboard
-document.getElementById('toggleSpecialKeyboard').addEventListener('click', () => {
-    toggleKeyboard('specialKeyboard');
-});
-
-document.getElementById('toggleCapitalLetters').addEventListener('click', () => {
-    toggleKeyboard('capitalLettersKeyboard');
-});
-
-document.getElementById('toggleExtraKeyboard').addEventListener('click', () => {
-    toggleKeyboard('extraKeyboard');
-});
-  
-
-  // Menambahkan fungsi untuk tombol pada keyboard
-  document.querySelectorAll('.key').forEach(function(button) {
-    button.addEventListener('click', function() {
-      let inputText = document.getElementById('inputText');
-      inputText.value += button.textContent;
-    });
-  });
-
-  document.querySelectorAll('.key-symbol').forEach(function(button) {
-    button.addEventListener('click', function() {
-      let inputText = document.getElementById('inputText');
-      inputText.value += button.textContent;
-    });
-  });
-</script>
-
-
-<script>
-  // Fungsi untuk menampilkan/menyembunyikan keyboard kedua dan mengubah teks tombol
-  function toggleSecondKeyboard() {
-    const secondKeyboard = document.getElementById("secondKeyboard");
-    const buttonText = document.getElementById("buttonText");
-
-    // Menyembunyikan atau menampilkan keyboard kedua
-    secondKeyboard.style.display = (secondKeyboard.style.display === "none" || secondKeyboard.style.display === "") ? "flex" : "none";
-
-    // Mengubah teks tombol menjadi "Nonaktifkan" atau kembali ke "Keyboard 2"
-    if (buttonText.innerText === "Keyboard 2") {
-      buttonText.innerText = "Nonaktifkan";
-    } else {
-      buttonText.innerText = "Keyboard 2";
-    }
-  }
-</script>
+      document.getElementById('letters').addEventListener('click', () => toggleKeyboard('keyboard'));
+      document.getElementById('numbers').addEventListener('click', () => toggleKeyboard('numberKeyboard'));
+      document.getElementById('symbols').addEventListener('click', () => toggleKeyboard('symbolKeyboard'));
+      document.getElementById('capitalLetters').addEventListener('click', () => toggleKeyboard('capitalKeyboard'));
+      document.getElementById('toggleSpecialKeyboard').addEventListener('click', () => toggleKeyboard('specialKeyboard'));
+      document.getElementById('toggleCapitalLetters').addEventListener('click', () => toggleKeyboard('capitalLettersKeyboard'));
+      document.getElementById('toggleExtraKeyboard').addEventListener('click', () => toggleKeyboard('extraKeyboard'));
+      
+      document.querySelectorAll('.key, .key-symbol').forEach(button => {
+          button.addEventListener('click', () => insertTextAtCursor(button.textContent));
+        });
+        
+      function toggleSecondKeyboard() {
+        const secondKeyboard = document.getElementById("secondKeyboard");
+        const buttonText = document.getElementById("buttonText");
+            
+        secondKeyboard.style.display = (secondKeyboard.style.display === "none" || secondKeyboard.style.display === "") ? "flex" : "none";
+    
+        if (buttonText.innerText === "Keyboard 2") {
+          buttonText.innerText = "Nonaktifkan";
+        } else {
+          buttonText.innerText = "Keyboard 2";
+        }
+      }
+    </script>
 
     <script>
         // Mengubah mode gelap
@@ -4100,47 +4333,43 @@ document.getElementById('toggleExtraKeyboard').addEventListener('click', () => {
         }
         
             // Mendapatkan elemen toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-
-// Menambahkan event listener untuk klik
-darkModeToggle.addEventListener('click', () => {
-  // Mengubah mode gelap di body
-  document.body.classList.toggle('dark-mode');
-
-  // Mengubah gaya tombol toggle
-  darkModeToggle.classList.toggle('dark');
-});
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        
+        // Menambahkan event listener untuk klik
+        darkModeToggle.addEventListener('click', () => {
+          // Mengubah mode gelap di body
+          document.body.classList.toggle('dark-mode');
+        
+          // Mengubah gaya tombol toggle
+          darkModeToggle.classList.toggle('dark');
+        });
 
         // **Navigasi Halaman**
         function navigateTo(url) {
             window.location.href = url; // Arahkan ke URL tujuan
         }
-    </script>
-
-  </div>
- </div>
+      </script>
+   </div>
+   </div>
  
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <style>
-
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+      <style>
+      
         #container {
             padding: 15px;
             width: 100%;
             position: relative;
         }
-
-        /* Overlay latar belakang saat catatan muncul */
-        #overlay {
+          
+          #overlay {
             display: none;
             position: fixed;
             z-index: 999;
         }
-
-        /* Kotak catatan */
+          
         #notes {
             display: none;
             position: fixed;
@@ -4155,105 +4384,103 @@ darkModeToggle.addEventListener('click', () => {
             z-index: 1000;
           }
         
-        /* Style bagian luar (container) */
-.textarea-container {
-    width: 100%;
-    padding: 0px;
-    border-radius: 8px; /* Sudut melengkung */
-    background-color: #f9f9f9; /* Warna latar */
-}
-
-/* Style bagian dalam (textarea) */
-.textarea-container textarea {
-    width: 100%;
-    max-height: 35px; /* Sesuaikan tinggi */
-    padding: 5px;
-    border: 1px solid #e2e3e4;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: #fff;
-    resize: vertical; /* Bisa diubah ukurannya secara vertikal */
-    }
-    
-
-.fixed-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 9999;
-}
-
-html, body {
-    width: 100vw;
-    overflow-x: hidden; 
-}
-
-#overlay {
-    background: linear-gradient(to bottom right, #8bb8fd, #e7f0ff);
-    background-size: cover;
-}
-
-#notes {
-    background: rgba(201,212,255,0.8);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.fixed-button {
-    background: #5588ff;
-    color: white;
-    border: none;
-    padding: 2px 8px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.fixed-button:hover {
-    background: #fd0108;
-}
-
-.text-box {
-    background: #fff;
-    padding: 10px 30px;
-    border-radius: 5px; 
-    width: 100%;
-    font-size: 13px;
-    display: inline-block; 
-    margin: 0px 0;
-    }
-
-.copybutton {
-    cursor: pointer;
-    background-color: #007bff; /* Warna latar belakang biru */
-    color: white; /* Warna teks putih */
-    padding: 5px 10px; /* Jarak dalam tombol */
-    border-radius: 5px; /* Sudut melengkung */
-    border: none;
-    font-weight: bold;
-}
-
-/* Efek saat tombol dihover */
-.copybutton:hover {
-    background-color: #0056b3; /* Warna lebih gelap saat hover */
-}
-
+        /* (container) */
+        .textarea-container {
+            width: 100%;
+            padding: 0px;
+            border-radius: 8px; /* Sudut melengkung */
+            background-color: #f9f9f9; /* Warna latar */
+        }
+        
+        /* (textarea) */
+        .textarea-container textarea {
+            width: 100%;
+            max-height: 35px; /* Sesuaikan tinggi */
+            padding: 5px;
+            border: 1px solid #e2e3e4;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: #fff;
+            resize: vertical; /* Bisa diubah ukurannya secara vertikal */
+            }
+            
+          .fixed-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+        
+          html, body {
+            width: 100vw;
+            overflow-x: hidden; 
+        }
+        
+          #overlay {
+            background: linear-gradient(to bottom right, #8bb8fd, #e7f0ff);
+            background-size: cover;
+            }
+        
+          #notes {
+            background: rgba(201,212,255,0.8);
+            border-radius: 10px;
+            padding: 20px;
+          }
+        
+          .fixed-button {
+            background: #5588ff;
+            color: white;
+            border: none;
+            padding: 2px 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            }
+        
+        .fixed-button:hover {
+            background: #fd0108;
+            }
+        
+        .text-box {
+            background: #fff;
+            padding: 10px 30px;
+            border-radius: 5px; 
+            width: 100%;
+            font-size: 13px;
+            display: inline-block; 
+            margin: 0px 0;
+            }
+        
+        .copybutton {
+            cursor: pointer;
+            background-color: #007bff; 
+            color: white; 
+            padding: 5px 10px;
+            border-radius: 5px; 
+            border: none;
+            font-weight: bold;
+            }
+        
+        .copybutton:hover {
+            background-color: #0056b3; 
+       }
 
     </style>
+    
   </head>
-    <body>
+      <body>
         <div class id= "container" style=" width: 100%;">
       <h1 style="font-size: 15px; display: flex; align-items: center; justify-content: space-between; padding: 0px; font-weight:bold;"> 
         font Style </h1>
           <p>
             <img src="https://iili.io/39gOjOG.png?nocache=123" style="width: 100%; height: auto; pointer-events: none;">
             </p>
-        <button id="homeButton" style="border: none; background-color: #8a14f8; border-radius: 5px; font-size: 12px; cursor: pointer; color: #f7f7f7; padding: 3px 5px; margin-bottom: 5px; 0px; ">font unique click </button>
+        <button id="homeButton" style="border: none; background-color: #8a14f8; border-radius: 8px; font-size: 12px; cursor: pointer; color: #f7f7f7; padding: 2px 5px; margin-bottom: 5px; 0px; ">font unique click </button>
 
 <div class="textarea-container">
     <textarea class="form-control fancytext" required name="text" placeholder="Tulis text disini.."></textarea>
@@ -4826,14 +5053,13 @@ TOMMY 𝓐ᵈʰ͜͡ɛˡʸ͟ɴ͟͠𝔬‣⁌͜͡❬❬͜͡❭❭͜͡⁍๏ᆖᆖ�
 ＯＫＥ ＧＡＳＳＳ．．！！！" id="copy_87" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_87">Copy</span></div></div><div class="input-group mb-3"><input type="text" class="form-control text-89" value="🪶ℳ𝓎 𝓁𝒾𝒻ℯ 𝒹𝒾𝒻𝒻ℯ𝓇ℯ𝓃𝓉 ____________
 🎱➦➲╰─────────╮🖋️" id="copy_88" readonly="readonly"><div class="input-group-append"><span class="input-group-text copybutton" style="cursor:pointer;" data-clipboard-action="copy" data-clipboard-target="#copy_88">Copy</span></div></div></div>
 
-<button class="btn btn-primary loadmore" style="margin-top: 5px; border-radius: 5px; padding: 1px 5px; font-weight: bold; font-size: 14px;">Load More</button>
+<button class="btn btn-primary loadmore" style="margin-top: 15px; border-radius: 10px; padding: 1px 20px; font-weight: bold; font-size: 12px;">Load More</button>
 
 
     <hr/>
-      <center>
-         <p style="font-weight: bold; font-size: 15px; ">
-            Unlimit Creativity
-            </p>
+            <a href="https://tommydev27.github.io/tommy.fb-web/" target="_blank" style="text-decoration: none;">
+              <i style="font-size: 25px; color: #0073eff9; margin-bottom: 10px;" class="fas fa-laptop-house"> </i> <b style="font-size:16px; color: #333;">Home On Click/ selengkapnya...
+          </a> 
             
             <img src="https://iili.io/3964AyQ.png?nocache=123" style="width: 100%; height: auto; pointer-events: none;">
             <img src="https://iili.io/3961T6g.png?nocache=123" style="width: 100%; height: auto; pointer-events: none;">
