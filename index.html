@@ -69,31 +69,35 @@
               display: inline-flex;
               align-items: center;
               padding: 0px;
-              margin-left: -2px;
+              margin-left: 0px;
             }
-            
+
+
             
           .button-container button {
               display: inline-flex;
               align-items: center;
-              padding: 2px 5px;
+              justify-content: center;
               font-size: 12px;
-              margin: 2px 2px;
+              height: 27px;
+              margin-bottom: 0px;
+              margin: 2px 1px;
               border: none;
-              background-color: #fff;
+              background-color: white;
               color: #333;
               border-radius: 5px;
               border: 2px solid gray;
               cursor: pointer;
               width: 85px; /* Menyamakan lebar tombol */
-              text-align: left; /* Pastikan teks di kiri */
+              text-align: center; /* Pastikan teks di kiri */
           }
           
             .button-container-wrapper {
                 overflow-x: auto;
                 white-space: nowrap;
                 width: 100%;
-                margin-bottom: 0px;
+                padding: 0px 2px;
+                margin-bottom: 3px;
                 border-radius: 5px;
                 border: solid 1px gray;
             }
@@ -104,7 +108,7 @@
             }
             
               div button:hover {
-              background-color: red;
+              background-color: #000000;
               color: white; 
               }
                 
@@ -201,6 +205,7 @@
                   font-weight: bold;
                   font-size: 12px;
                   background-color: #333;
+                  margin-bottom: 5px;
                   color: #fff;
                   border-radius: 5px;
                   cursor: pointer;
@@ -249,7 +254,7 @@
                  }
     
                 button:hover {
-                background-color: #521f1f;
+                background-color: #2b2020;
                 }
                  
                 #result {
@@ -440,7 +445,7 @@
       
     <textarea id="inputText" placeholder="Tulis teks..." style="margin-bottom: 0px; resize: none;"></textarea>
         
-      <div class="button-container" style="display: flex; gap: 15px;            margin-top: -5px;">
+      <div class="button-container" style=" padding: 3px 0px;display: flex; gap: 15px;            margin-top: -5px;">
       <button class="action-button salin" 
           onclick="copyText()" 
           style="background-color: #037112c2; color: white;  border-radius: 4px; width: 40px; height: 20px; display: flex; justify-content: center; align-items: center;"
@@ -632,36 +637,116 @@ style: (txt) => `
 <div class="button-container-wrapper">
     <div class="button-container">
         <button id="numbers">
-            <span><a style="color: #1671fd; font-size: 12px;">❮ ❯</a> Matical </span>
+            <span style="font-size: 15px;  text-align: center;">☹ ☺ ☻</span>
         </button>
 
         <button id="capitalLetters">
-            <span><a style="color: #1671fd; font-size: 12px;">🎱 </a> toggle</span>
+            <span style="font-size: 15px;  text-align: center; margin-top: 2px;">❶㉣⓷</span>
         </button>
 
-        <button id="toggleSpecialKeyboard">
-            <span><a style="color: #1671fd; font-size: 12px;">🃏 </a>Card</span>
+        <button id="toggleSpecialKeyboard" style="color: #db0000;">
+            <span style=" text-align: center;font-size: 18px; text-align: center; border-sol: none;">🂱🂼🂽</span>
         </button>
 
         <button id="toggleCapitalLetters">
-            <span><a style="color: #1671fd; font-size: 12px;">😃 </a> Emoji</span>
+            <span style="font-size: 15px;  text-align: center;">🦸🏻‍♂️🦹🏻‍♂️</span>
         </button>
 
         <button id="toggleExtraKeyboard">
-            <span><a style="color: #1671fd; font-size: 12px;">𓆉 </a> hieroglif</span>
+            <span style="font-size: 15px;  text-align: center;">𓆉 𓆣𓇻</span>
         </button>
-        
-        
-       <button id="toggleExtraKeyboard1">
-            <span><a style="color: #1671fd; font-size: 12px;">✪ </a>Star</span>
+
+        <button id="toggleExtraKeyboard1">
+            <span style="font-size: 15px;  text-align: center;">★✯✭</span>
         </button>
-        
-        
+
         <button id="symbols">
-            <span><a style="color: #1671fd; font-size: 12px;">𝓕 </a>s̸̳̋t̸̳y̸̳l̳e̳💲</span>
+            <span style="font-size: 15px;  text-align: center;">s̸̳̋t̸̳y̸̳l̳e̳</span>
         </button>
     </div>
 </div>
+</div>
+
+
+<div class="button-container-wrapper">
+    <div class="button-container">
+        <button id="numbers1">
+            <span><a style=" font-size: 15px;  text-align: center; display: flex; justify-content: center;">🅐🅑🅒</span>
+        </button>
+
+        <button id="numbers2">
+            <span><a style="font-size: 15px;  text-align: center;">🅰🅱🅲</span>
+        </button>
+
+        <button id="numbers3">
+            <span><a style=" font-size: 15px;  text-align: center;">𝕬𝕭𝕮</span>
+        </button>
+
+        <button id="numbers4">
+            <span><a style="font-size: 15px;  text-align: center;">卂乃匚</span>
+        </button>
+
+        <button id="numbers5">
+            <span><a style="font-size: 15px;  text-align: center;">𝔸𝔹ℂ</span>
+        </button>
+        
+        
+       <button id="numbers6">
+            <span><a style="font-size: 15px;  text-align: center;">أرابيك</span>
+        </button>
+        
+        
+        <button id="numbers7">
+            <span><a style="font-size: 15px;  text-align: center;">𝗔𝗕𝗖</span>
+            
+ <button id="numbers8">
+    <span><a style="font-size: 15px;  text-align: center;">A҉B҉C҉</a></span>
+</button>
+<button id="numbers9">
+    <span><a style="font-size: 15px;  text-align: center;">𝘼𝘽𝘾</a></span>
+</button>
+<button id="numbers10">
+    <span><a style="font-size: 15px;  text-align: center;">𝙰𝙱𝙲</a></span>
+</button>
+<button id="numbers11">
+    <span><a style="font-size: 15px;  text-align: center;">𝜟𝜝𝜮</a></span>
+</button>
+<button id="numbers12">
+    <span><a style="font-size: 15px;  text-align: center;">ᏫᏤᏆ</a></span>
+</button>
+<button id="numbers13">
+    <span><a style="font-size: 15px;  text-align: center;">∂єℓ</a></span>
+</button>
+<button id="numbers14">
+    <span><a style="font-size: 15px;  text-align: center;">ꊼꌃꁅ</a></span>
+</button>
+<button id="numbers15">
+    <span><a style="font-size: 15px;  text-align: center;">d̸̻̉̔͗̈́̚č̵̨̙̼̫̻͉͒̾̄̉͝v̴̡̮̣̥̩̻̲̀̓͐͜͝</a></span>
+</button>
+<button id="numbers16">
+    <span><a style="font-size: 15px;  text-align: center;">a⃞b⃞c⃞</a></span>
+</button>
+<button id="numbers17">
+    <span><a style="font-size: 15px;  text-align: center;">A͢͠༽B͢͠༽C͢͠༽</a></span>
+</button>
+<button id="numbers18">
+    <span><a style="font-size: 15px;  text-align: center;">⎱A̷̸̳⃜⎱⎱B̷̸̳⃜⎱⎱C̷̸̳⃜⎱</a></span>
+</button>
+<button id="numbers19">
+    <span><a style="font-size: 15px;  text-align: center;">ₐ ᴮ ᶜ</a></span>
+</button>
+<button id="numbers20">
+    <span><a style="font-size: 15px;  text-align: center;">ค๒ς</a></span>
+</button>
+
+            
+        </button>
+    </div>
+</div>
+
+
+
+
 
     <!-- Tombol keyboard1 -->
    <div class="button-container keyboard-2-container">
@@ -672,90 +757,10 @@ style: (txt) => `
       </div>
       <div class="keyboard-container">
       
-       <div id="keyboard" class="keyboard">
-            <!-- Tombol huruf -->
-    <button class="key">Ａ</button>
-    <button class="key">Ｂ</button>
-    <button class="key">Ｃ</button>
-    <button class="key">Ｄ</button>
-    <button class="key">Ｅ</button>
-    <button class="key">Ｆ</button>
-    <button class="key">Ｇ</button>
-    <button class="key">Ｈ</button>
-    <button class="key">Ｉ</button>
-    <button class="key">Ｊ</button>
-    <button class="key">Ｋ</button>
-    <button class="key">Ｌ</button>
-    <button class="key">Ｍ</button>
-    <button class="key">Ｎ</button>
-    <button class="key">Ｏ</button>
-    <button class="key">Ｐ</button>
-    <button class="key">Ｑ</button>
-    <button class="key">Ｒ</button>
-    <button class="key">Ｓ</button>
-    <button class="key">Ｔ</button>
-    <button class="key">Ｕ</button>
-    <button class="key">Ｖ</button>
-    <button class="key">Ｗ</button>
-    <button class="key">Ｘ</button>
-    <button class="key">Ｙ</button>
-    <button class="key">Ｚ</button>
+      
+<!-- Tambahkan div keyboard untuk masing-masing tombol -->
 
-    <!-- Huruf besar 𝐀-𝐙 -->
-    <button class="key">𝐀</button>
-    <button class="key">𝐁</button>
-    <button class="key">𝐂</button>
-    <button class="key">𝐃</button>
-    <button class="key">𝐄</button>
-    <button class="key">𝐅</button>
-    <button class="key">𝐆</button>
-    <button class="key">𝐇</button>
-    <button class="key">𝐈</button>
-    <button class="key">𝐉</button>
-    <button class="key">𝐊</button>
-    <button class="key">𝐋</button>
-    <button class="key">𝐌</button>
-    <button class="key">𝐍</button>
-    <button class="key">𝐎</button>
-    <button class="key">𝐏</button>
-    <button class="key">𝐐</button>
-    <button class="key">𝐑</button>
-    <button class="key">𝐒</button>
-    <button class="key">𝐓</button>
-    <button class="key">𝐔</button>
-    <button class="key">𝐕</button>
-    <button class="key">𝐖</button>
-    <button class="key">𝐗</button>
-    <button class="key">𝐘</button>
-    <button class="key">𝐙</button>
-    
-    <!-- Huruf kecil 𝐚-𝐳 -->
-    <button class="key">𝐚</button>
-    <button class="key">𝐛</button>
-    <button class="key">𝐜</button>
-    <button class="key">𝐝</button>
-    <button class="key">𝐞</button>
-    <button class="key">𝐟</button>
-    <button class="key">𝐠</button>
-    <button class="key">𝐡</button>
-    <button class="key">𝐢</button>
-    <button class="key">𝐣</button>
-    <button class="key">𝐤</button>
-    <button class="key">𝐥</button>
-    <button class="key">𝐦</button>
-    <button class="key">𝐧</button>
-    <button class="key">𝐨</button>
-    <button class="key">𝐩</button>
-    <button class="key">𝐪</button>
-    <button class="key">𝐫</button>
-    <button class="key">𝐬</button>
-    <button class="key">𝐭</button>
-    <button class="key">𝐮</button>
-    <button class="key">𝐯</button>
-    <button class="key">𝐰</button>
-    <button class="key">𝐱</button>
-    <button class="key">𝐲</button>
-    <button class="key">𝐳</button>
+<div id="keyboard1" class="keyboard">
     <button class="key">🅐</button>
     <button class="key">🅑</button>
     <button class="key">🅒</button>
@@ -810,7 +815,9 @@ style: (txt) => `
     <button class="key">Ⓧ</button>
     <button class="key">Ⓨ</button>
     <button class="key">Ⓩ</button>
-
+ </div>
+    
+<div id="keyboard2" class="keyboard">
     <!-- Baris ketiga -->
     <button class="key">🅰</button>
     <button class="key">🅱</button>
@@ -866,62 +873,10 @@ style: (txt) => `
     <button class="key">🅇</button>
     <button class="key">🅈</button>
     <button class="key">🅉</button>
+</div>
 
-    <!-- Huruf besar 𝔸-ℤ -->
-    <button class="key">𝔸</button>
-    <button class="key">𝔹</button>
-    <button class="key">ℂ</button>
-    <button class="key">𝔻</button>
-    <button class="key">𝔼</button>
-    <button class="key">𝔽</button>
-    <button class="key">𝔾</button>
-    <button class="key">ℍ</button>
-    <button class="key">𝕀</button>
-    <button class="key">𝕁</button>
-    <button class="key">𝕂</button>
-    <button class="key">𝕃</button>
-    <button class="key">𝕄</button>
-    <button class="key">ℕ</button>
-    <button class="key">𝕆</button>
-    <button class="key">ℙ</button>
-    <button class="key">ℚ</button>
-    <button class="key">ℝ</button>
-    <button class="key">𝕊</button>
-    <button class="key">𝕋</button>
-    <button class="key">𝕌</button>
-    <button class="key">𝕍</button>
-    <button class="key">𝕎</button>
-    <button class="key">𝕏</button>
-    <button class="key">𝕐</button>
-    <button class="key">ℤ</button>
-    
-    <!-- Huruf kecil 𝕒-𝕫 -->
-    <button class="key">𝕒</button>
-    <button class="key">𝕓</button>
-    <button class="key">𝕔</button>
-    <button class="key">𝕕</button>
-    <button class="key">𝕖</button>
-    <button class="key">𝕗</button>
-    <button class="key">𝕘</button>
-    <button class="key">𝕙</button>
-    <button class="key">𝕚</button>
-    <button class="key">𝕛</button>
-    <button class="key">𝕜</button>
-    <button class="key">𝕝</button>
-    <button class="key">𝕞</button>
-    <button class="key">𝕟</button>
-    <button class="key">𝕠</button>
-    <button class="key">𝕡</button>
-    <button class="key">𝕢</button>
-    <button class="key">𝕣</button>
-    <button class="key">𝕤</button>
-    <button class="key">𝕥</button>
-    <button class="key">𝕦</button>
-    <button class="key">𝕧</button>
-    <button class="key">𝕨</button>
-    <button class="key">𝕩</button>
-    <button class="key">𝕪</button>
-    <button class="key">𝕫</button>
+
+<div id="keyboard3" class="keyboard">
     <!-- Huruf besar 𝕬-𝖅 -->
     <button class="key">𝕬</button>
     <button class="key">𝕭</button>
@@ -1027,8 +982,132 @@ style: (txt) => `
     <button class="key">𝔵</button>
     <button class="key">𝔶</button>
     <button class="key">𝔷</button>
+</div>
     
-    <button class="key">𝗔</button>
+ <div id="keyboard4" class="keyboard"> 
+    <button class="key">卂</button>
+    <button class="key">乃</button>
+    <button class="key">匚</button>
+    <button class="key">ᗪ</button>
+    <button class="key">乇</button>
+    <button class="key">千</button>
+    <button class="key">Ꮆ</button>
+    <button class="key">卄</button>
+    <button class="key">丨</button>
+    <button class="key">ﾌ</button>
+    <button class="key">Ҝ</button>
+    <button class="key">ㄥ</button>
+    <button class="key">爪</button>
+    <button class="key">几</button>
+    <button class="key">ㄖ</button>
+    <button class="key">卩</button>
+    <button class="key">Ɋ</button>
+    <button class="key">尺</button>
+    <button class="key">丂</button>
+    <button class="key">ㄒ</button>
+    <button class="key">ㄩ</button>
+    <button class="key">ᐯ</button>
+    <button class="key">山</button>
+    <button class="key">乂</button>
+    <button class="key">ㄚ</button>
+    <button class="key">乙</button>
+</div>
+
+
+<div id="keyboard5" class="keyboard">
+        <!-- Huruf besar 𝔸-ℤ -->
+    <button class="key">𝔸</button>
+    <button class="key">𝔹</button>
+    <button class="key">ℂ</button>
+    <button class="key">𝔻</button>
+    <button class="key">𝔼</button>
+    <button class="key">𝔽</button>
+    <button class="key">𝔾</button>
+    <button class="key">ℍ</button>
+    <button class="key">𝕀</button>
+    <button class="key">𝕁</button>
+    <button class="key">𝕂</button>
+    <button class="key">𝕃</button>
+    <button class="key">𝕄</button>
+    <button class="key">ℕ</button>
+    <button class="key">𝕆</button>
+    <button class="key">ℙ</button>
+    <button class="key">ℚ</button>
+    <button class="key">ℝ</button>
+    <button class="key">𝕊</button>
+    <button class="key">𝕋</button>
+    <button class="key">𝕌</button>
+    <button class="key">𝕍</button>
+    <button class="key">𝕎</button>
+    <button class="key">𝕏</button>
+    <button class="key">𝕐</button>
+    <button class="key">ℤ</button>
+    
+    <!-- Huruf kecil 𝕒-𝕫 -->
+    <button class="key">𝕒</button>
+    <button class="key">𝕓</button>
+    <button class="key">𝕔</button>
+    <button class="key">𝕕</button>
+    <button class="key">𝕖</button>
+    <button class="key">𝕗</button>
+    <button class="key">𝕘</button>
+    <button class="key">𝕙</button>
+    <button class="key">𝕚</button>
+    <button class="key">𝕛</button>
+    <button class="key">𝕜</button>
+    <button class="key">𝕝</button>
+    <button class="key">𝕞</button>
+    <button class="key">𝕟</button>
+    <button class="key">𝕠</button>
+    <button class="key">𝕡</button>
+    <button class="key">𝕢</button>
+    <button class="key">𝕣</button>
+    <button class="key">𝕤</button>
+    <button class="key">𝕥</button>
+    <button class="key">𝕦</button>
+    <button class="key">𝕧</button>
+    <button class="key">𝕨</button>
+    <button class="key">𝕩</button>
+    <button class="key">𝕪</button>
+    <button class="key">𝕫</button>
+</div>
+
+
+<div id="keyboard6" class="keyboard">
+    <button class="key">ا</button>
+    <button class="key">ب</button>
+    <button class="key">ت</button>
+    <button class="key">ث</button>
+    <button class="key">ج</button>
+    <button class="key">ح</button>
+    <button class="key">خ</button>
+    <button class="key">د</button>
+    <button class="key">ذ</button>
+    <button class="key">ر</button>
+    <button class="key">ز</button>
+    <button class="key">س</button>
+    <button class="key">ش</button>
+    <button class="key">ص</button>
+    <button class="key">ض</button>
+    <button class="key">ط</button>
+    <button class="key">ظ</button>
+    <button class="key">ع</button>
+    <button class="key">غ</button>
+    <button class="key">ف</button>
+    <button class="key">ق</button>
+    <button class="key">ك</button>
+    <button class="key">ل</button>
+    <button class="key">م</button>
+    <button class="key">ن</button>
+    <button class="key">ه</button>
+    <button class="key">و</button>
+    <button class="key">ي</button>
+
+</div>
+
+
+
+<div id="keyboard7" class="keyboard">     <button class="key">𝗔</button>
     <button class="key">𝗕</button>
     <button class="key">𝗖</button>
     <button class="key">𝗗</button>
@@ -1081,7 +1160,9 @@ style: (txt) => `
     <button class="key">𝘅</button>
     <button class="key">𝘆</button>
     <button class="key">𝘇</button>
+    </div>
     
+<div id="keyboard8" class="keyboard">
     <button class="key">A҉</button>
     <button class="key">B҉</button>
     <button class="key">C҉</button>
@@ -1108,7 +1189,61 @@ style: (txt) => `
     <button class="key">X҉</button>
     <button class="key">Y҉</button>
     <button class="key">Z҉</button>
-    
+</div>
+
+<div id="keyboard9" class="keyboard">
+    <button class="key">𝘼</button>
+    <button class="key">𝘽</button>
+    <button class="key">𝘾</button>
+    <button class="key">𝘿</button>
+    <button class="key">𝙀</button>
+    <button class="key">𝙁</button>
+    <button class="key">𝙂</button>
+    <button class="key">𝙃</button>
+    <button class="key">𝙄</button>
+    <button class="key">𝙅</button>
+    <button class="key">𝙆</button>
+    <button class="key">𝙇</button>
+    <button class="key">𝙈</button>
+    <button class="key">𝙉</button>
+    <button class="key">𝙊</button>
+    <button class="key">𝙋</button>
+    <button class="key">𝙌</button>
+    <button class="key">𝙍</button>
+    <button class="key">𝙎</button>
+    <button class="key">𝙏</button>
+    <button class="key">𝙐</button>
+    <button class="key">𝙑</button>
+    <button class="key">𝙒</button>
+    <button class="key">𝙓</button>
+    <button class="key">𝙔</button>
+    <button class="key">𝙕</button>
+    <button class="key">𝙖</button>
+    <button class="key">𝙗</button>
+    <button class="key">𝙘</button>
+    <button class="key">𝙙</button>
+    <button class="key">𝙚</button>
+    <button class="key">𝙛</button>
+    <button class="key">𝙜</button>
+    <button class="key">𝙝</button>
+    <button class="key">𝙞</button>
+    <button class="key">𝙟</button>
+    <button class="key">𝙠</button>
+    <button class="key">𝙡</button>
+    <button class="key">𝙢</button>
+    <button class="key">𝙣</button>
+    <button class="key">𝙤</button>
+    <button class="key">𝙥</button>
+    <button class="key">𝙦</button>
+    <button class="key">𝙧</button>
+    <button class="key">𝙨</button>
+    <button class="key">𝙩</button>
+    <button class="key">𝙪</button>
+    <button class="key">𝙫</button>
+    <button class="key">𝙬</button>
+    <button class="key">𝙭</button>
+    <button class="key">𝙮</button>
+    <button class="key">𝙯</button>
     <button class="key">𝘈</button>
     <button class="key">𝘉</button>
     <button class="key">𝘊</button>
@@ -1135,7 +1270,35 @@ style: (txt) => `
     <button class="key">𝘟</button>
     <button class="key">𝘠</button>
     <button class="key">𝘡</button>
-    
+    <button class="key">𝘢</button>
+    <button class="key">𝘣</button>
+    <button class="key">𝘤</button>
+    <button class="key">𝘥</button>
+    <button class="key">𝘦</button>
+    <button class="key">𝘧</button>
+    <button class="key">𝘨</button>
+    <button class="key">𝘩</button>
+    <button class="key">𝘪</button>
+    <button class="key">𝘫</button>
+    <button class="key">𝘬</button>
+    <button class="key">𝘭</button>
+    <button class="key">𝘮</button>
+    <button class="key">𝘯</button>
+    <button class="key">𝘰</button>
+    <button class="key">𝘱</button>
+    <button class="key">𝘲</button>
+    <button class="key">𝘳</button>
+    <button class="key">𝘴</button>
+    <button class="key">𝘵</button>
+    <button class="key">𝘶</button>
+    <button class="key">𝘷</button>
+    <button class="key">𝘸</button>
+    <button class="key">𝘹</button>
+    <button class="key">𝘺</button>
+    <button class="key">𝘻</button>
+</div>
+
+<div id="keyboard10" class="keyboard">
     <button class="key">𝙰</button>
     <button class="key">𝙱</button>
     <button class="key">𝙲</button>
@@ -1162,7 +1325,198 @@ style: (txt) => `
     <button class="key">𝚇</button>
     <button class="key">𝚈</button>
     <button class="key">𝚉</button>
+    <button class="key">𝚊</button>
+    <button class="key">𝚋</button>
+    <button class="key">𝚌</button>
+    <button class="key">𝚍</button>
+    <button class="key">𝚎</button>
+    <button class="key">𝚏</button>
+    <button class="key">𝚐</button>
+    <button class="key">𝚑</button>
+    <button class="key">𝚒</button>
+    <button class="key">𝚓</button>
+    <button class="key">𝚔</button>
+    <button class="key">𝚕</button>
+    <button class="key">𝚖</button>
+    <button class="key">𝚗</button>
+    <button class="key">𝚘</button>
+    <button class="key">𝚙</button>
+    <button class="key">𝚚</button>
+    <button class="key">𝚛</button>
+    <button class="key">𝚜</button>
+    <button class="key">𝚝</button>
+    <button class="key">𝚞</button>
+    <button class="key">𝚟</button>
+    <button class="key">𝚠</button>
+    <button class="key">𝚡</button>
+    <button class="key">𝚢</button>
+    <button class="key">𝚣</button>
+</div>
+
+
+<div id="keyboard11" class="keyboard">
+    <button class="key">𝚨</button>
+    <button class="key">𝚩</button>
+    <button class="key">𝚪</button>
+    <button class="key">𝚫</button>
+    <button class="key">𝚬</button>
+    <button class="key">𝚭</button>
+    <button class="key">𝚮</button>
+    <button class="key">𝚯</button>
+    <button class="key">𝚰</button>
+    <button class="key">𝚱</button>
+    <button class="key">𝚲</button>
+    <button class="key">𝚳</button>
+    <button class="key">𝚴</button>
+    <button class="key">𝚵</button>
+    <button class="key">𝚶</button>
+    <button class="key">𝚷</button>
+    <button class="key">𝚸</button>
+    <button class="key">𝚹</button>
+    <button class="key">𝚺</button>
+    <button class="key">𝚻</button>
+    <button class="key">𝚼</button>
+    <button class="key">𝚽</button>
+    <button class="key">𝚾</button>
+    <button class="key">𝚿</button>
+    <button class="key">𝛀</button>
+    <button class="key">Α</button>
+    <button class="key">Β</button>
+    <button class="key">Γ</button>
+    <button class="key">Δ</button>
+    <button class="key">Ε</button>
+    <button class="key">Ζ</button>
+    <button class="key">Η</button>
+    <button class="key">Θ</button>
+    <button class="key">Ι</button>
+    <button class="key">Κ</button>
+    <button class="key">Λ</button>
+    <button class="key">Μ</button>
+    <button class="key">Ν</button>
+    <button class="key">Ξ</button>
+    <button class="key">Ο</button>
+    <button class="key">Π</button>
+    <button class="key">Ρ</button>
+    <button class="key">Σ</button>
+    <button class="key">Τ</button>
+    <button class="key">Υ</button>
+    <button class="key">Φ</button>
+    <button class="key">Χ</button>
+    <button class="key">Ψ</button>
+    <button class="key">Ω</button>
+    <!-- Huruf Yunani Kapital Miring -->
+    <button class="key">𝛢</button>
+    <button class="key">𝛣</button>
+    <button class="key">𝛤</button>
+    <button class="key">𝛥</button>
+    <button class="key">𝛦</button>
+    <button class="key">𝛧</button>
+    <button class="key">𝛨</button>
+    <button class="key">𝛩</button>
+    <button class="key">𝛪</button>
+    <button class="key">𝛫</button>
+    <button class="key">𝛬</button>
+    <button class="key">𝛭</button>
+    <button class="key">𝛮</button>
+    <button class="key">𝛯</button>
+    <button class="key">𝛰</button>
+    <button class="key">𝛱</button>
+    <button class="key">𝛲</button>
+    <button class="key">𝛳</button>
+    <button class="key">𝛴</button>
+    <button class="key">𝛵</button>
+    <button class="key">𝛶</button>
+    <button class="key">𝛷</button>
+    <button class="key">𝛸</button>
+    <button class="key">𝛹</button>
+    <button class="key">𝛺</button>
     
+    <!-- Huruf Yunani Kecil Miring -->
+    <button class="key">𝛼</button>
+    <button class="key">𝛽</button>
+    <button class="key">𝛾</button>
+    <button class="key">𝛿</button>
+    <button class="key">𝜀</button>
+    <button class="key">𝜁</button>
+    <button class="key">𝜂</button>
+    <button class="key">𝜃</button>
+    <button class="key">𝜄</button>
+    <button class="key">𝜅</button>
+    <button class="key">𝜆</button>
+    <button class="key">𝜇</button>
+    <button class="key">𝜈</button>
+    <button class="key">𝜉</button>
+    <button class="key">𝜊</button>
+    <button class="key">𝜋</button>
+    <button class="key">𝜌</button>
+    <button class="key">𝜍</button>
+    <button class="key">𝜎</button>
+    <button class="key">𝜏</button>
+    <button class="key">𝜐</button>
+    <button class="key">𝜑</button>
+    <button class="key">𝜒</button>
+    <button class="key">𝜓</button>
+    <button class="key">𝜔</button>
+    
+    <!-- Huruf Yunani Kapital Tebal Miring -->
+    <button class="key">𝜜</button>
+    <button class="key">𝜝</button>
+    <button class="key">𝜞</button>
+    <button class="key">𝜟</button>
+    <button class="key">𝜠</button>
+    <button class="key">𝜡</button>
+    <button class="key">𝜢</button>
+    <button class="key">𝜣</button>
+    <button class="key">𝜤</button>
+    <button class="key">𝜥</button>
+    <button class="key">𝜦</button>
+    <button class="key">𝜧</button>
+    <button class="key">𝜨</button>
+    <button class="key">𝜩</button>
+    <button class="key">𝜪</button>
+    <button class="key">𝜫</button>
+    <button class="key">𝜬</button>
+    <button class="key">𝜭</button>
+    <button class="key">𝜮</button>
+    <button class="key">𝜯</button>
+    <button class="key">𝜰</button>
+    <button class="key">𝜱</button>
+    <button class="key">𝜲</button>
+    <button class="key">𝜳</button>
+    <button class="key">𝜴</button>
+    <button class="key">𝜵</button>
+    <button class="key">𝜶</button>
+    
+    <!-- Huruf Yunani Kecil Tebal Miring -->
+    <button class="key">𝜶</button>
+    <button class="key">𝜷</button>
+    <button class="key">𝜸</button>
+    <button class="key">𝜹</button>
+    <button class="key">𝜺</button>
+    <button class="key">𝜻</button>
+    <button class="key">𝜼</button>
+    <button class="key">𝜽</button>
+    <button class="key">𝜾</button>
+    <button class="key">𝜿</button>
+    <button class="key">𝝀</button>
+    <button class="key">𝝁</button>
+    <button class="key">𝝂</button>
+    <button class="key">𝝃</button>
+    <button class="key">𝝄</button>
+    <button class="key">𝝅</button>
+    <button class="key">𝝆</button>
+    <button class="key">𝝇</button>
+    <button class="key">𝝈</button>
+    <button class="key">𝝉</button>
+    <button class="key">𝝊</button>
+    <button class="key">𝝋</button>
+    <button class="key">𝝌</button>
+    <button class="key">𝝍</button>
+    <button class="key">𝝎</button>
+
+</div>
+
+<div id="keyboard12" class="keyboard">
     <button class="key">Ꭺ</button>
     <button class="key">Ᏼ</button>
     <button class="key">Ꮯ</button>
@@ -1189,8 +1543,9 @@ style: (txt) => `
     <button class="key">X</button>
     <button class="key">Ꮍ</button>
     <button class="key">Ꮓ</button>
-    <button class="key">O</button>
-    <button class="key">P</button>
+</div>
+
+<div id="keyboard13" class="keyboard">
     <button class="key">α</button>
     <button class="key">в</button>
     <button class="key">¢</button>
@@ -1210,14 +1565,12 @@ style: (txt) => `
     <button class="key">q</button>
     <button class="key">я</button>
     <button class="key">ѕ</button>
-    <button class="key">т</button>
+    <button class="key">τ</button>
     <button class="key">у</button>
     <button class="key">ν</button>
     <button class="key">ω</button>
     <button class="key">χ</button>
-    <button class="key">у</button>
     <button class="key">z</button>
-    
     <button class="key">ʌ</button>
     <button class="key">ɑ:</button>
     <button class="key">æ</button>
@@ -1240,8 +1593,6 @@ style: (txt) => `
     <button class="key">ʊə</button>
     <button class="key">b</button>
     <button class="key">d</button>
-    <button class="key">f</button>
-    <button class="key">g</button>
     <button class="key">h</button>
     <button class="key">j</button>
     <button class="key">k</button>
@@ -1253,24 +1604,19 @@ style: (txt) => `
     <button class="key">r</button>
     <button class="key">s</button>
     <button class="key">ʃ</button>
-    <button class="key">t</button>
     <button class="key">tʃ</button>
     <button class="key">θ</button>
     <button class="key">ð</button>
     <button class="key">v</button>
     <button class="key">w</button>
-    <button class="key">z</button>
     <button class="key">ʒ</button>
     <button class="key">dʒ</button>
-    <button class="key">α</button>
     <button class="key">β</button>
     <button class="key">γ</button>
     <button class="key">δ</button>
     <button class="key">ε</button>
     <button class="key">ζ</button>
     <button class="key">η</button>
-    <button class="key">θ</button>
-    <button class="key">ι</button>
     <button class="key">κ</button>
     <button class="key">λ</button>
     <button class="key">μ</button>
@@ -1278,39 +1624,626 @@ style: (txt) => `
     <button class="key">ξ</button>
     <button class="key">ο</button>
     <button class="key">π</button>
-    <button class="key">ρ</button>
     <button class="key">ς</button>
-    <button class="key">σ</button>
-    <button class="key">τ</button>
-    <button class="key">υ</button>
     <button class="key">φ</button>
-    <button class="key">χ</button>
     <button class="key">ψ</button>
-    <button class="key">ω</button>
-    <button class="key">Α</button>
-    <button class="key">Β</button>
-    <button class="key">Γ</button>
-    <button class="key">Δ</button>
-    <button class="key">Ε</button>
-    <button class="key">Ζ</button>
-    <button class="key">Η</button>
-    <button class="key">Θ</button>
-    <button class="key">Ι</button>
-    <button class="key">Κ</button>
-    <button class="key">Λ</button>
-    <button class="key">Μ</button>
-    <button class="key">Ν</button>
-    <button class="key">Ξ</button>
-    <button class="key">Ο</button>
-    <button class="key">Π</button>
-    <button class="key">Ρ</button>
-    <button class="key">Σ</button>
-    <button class="key">Τ</button>
-    <button class="key">Υ</button>
-    <button class="key">Φ</button>
-    <button class="key">Χ</button>
-    <button class="key">Ψ</button>
-    <button class="key">Ω</button>
+</div>
+
+
+<div id="keyboard14" class="keyboard">
+    <button class="key">ꍏ</button>
+    <button class="key">ꌃ</button>
+    <button class="key">ꉓ</button>
+    <button class="key">ꀸ</button>
+    <button class="key">ꍟ</button>
+    <button class="key">ꎇ</button>
+    <button class="key">ꁅ</button>
+    <button class="key">ꃅ</button>
+    <button class="key">ꀤ</button>
+    <button class="key">ꀭ</button>
+    <button class="key">ꀘ</button>
+    <button class="key">꒒</button>
+    <button class="key">ꂵ</button>
+    <button class="key">ꈤ</button>
+    <button class="key">ꂦ</button>
+    <button class="key">ꉣ</button>
+    <button class="key">ꆰ</button>
+    <button class="key">ꋪ</button>
+    <button class="key">ꌗ</button>
+    <button class="key">꓄</button>
+    <button class="key">ꀎ</button>
+    <button class="key">ꃴ</button>
+    <button class="key">ꅏ</button>
+    <button class="key">ꊼ</button>
+    <button class="key">ꌩ</button>
+    <button class="key">ꁴ</button>
+</div>
+
+<div id="keyboard15" class="keyboard">
+    <button class="key">ǎ̴̰͎̪̠̱̱</button>
+    <button class="key">b̶̟̑̊͠</button>
+    <button class="key">č̵̨̙̼̫̻͉͒̾̄̉͝</button>
+    <button class="key">d̸̻̉̔͗̈́̚</button>
+    <button class="key">ι̺͖</button>
+    <button class="key">ę̸̡̛̥̥͔̍̍̌̈͂̈̏́</button>
+    <button class="key">f̷̨̳̱͓̞̪̝͇͛͌̍͗̈̂͗͘͝</button>
+    <button class="key">g̷̥͖͈̪̻̾̐̀̽</button>
+    <button class="key">ḩ̴̧̧̪͓̲̝̫̺̉̒̒̊͋̒͠</button>
+    <button class="key">ì̸͍͎̟͎̹̔̿͂͌</button>
+    <button class="key">j̸̗̮͚̗̠̍͗̽͊́͑̂͂͠</button>
+    <button class="key">k̵̺̈̋̋͝</button>
+    <button class="key">ľ̵̰͔̗͈͈̦̙̮̜̔͌</button>
+    <button class="key">m̵̼̼̈̽̕</button>
+    <button class="key">n̷̬̞̣̐̑̀͌͒̾͠͠</button>
+    <button class="key">o̵̻̣̮͆̏̈́̑̂̃̚͝͠͝</button>
+    <button class="key">p̸̡̧̧̟̦̩̱̟̭̭͋̀͋̄͠</button>
+    <button class="key">q̶̛͕͎͙̂̑͒̈́͝</button>
+    <button class="key">r̸͙͈̘̘̳̹͊̍́ι͉͔</button>
+    <button class="key">s̶̠͔̖̰͓̃̀͂́</button>
+    <button class="key">t̵̛̠̻̻͛̊̊̓͝</button>
+    <button class="key">ȕ̵̧̈̕ι̮̻͈̗̬</button>
+    <button class="key">v̴̡̮̣̥̩̻̲̀̓͐͜͝</button>
+    <button class="key">w̷̢̛̻̮͔̍̆̎́̒̆͛</button>
+    <button class="key">x̷̨͚̝̱͔̬͙̭̹̲̄</button>
+    <button class="key">ỹ̶̨͖͈̪̋̂͐͛͑͆͘͠</button>
+    <button class="key">ẕ̶̧̞̠͇̒̀͛̈́̇̉̑͘͘͜</button>
+</div>
+
+<div id="keyboard16" class="keyboard">
+    <button class="key">a⃞</button>
+    <button class="key">b⃞</button>
+    <button class="key">c⃞</button>
+    <button class="key">d⃞</button>
+    <button class="key">e⃞</button>
+    <button class="key">f⃞</button>
+    <button class="key">g⃞</button>
+    <button class="key">h⃞</button>
+    <button class="key">i⃞</button>
+    <button class="key">j⃞</button>
+    <button class="key">k⃞</button>
+    <button class="key">l⃞</button>
+    <button class="key">m⃞</button>
+    <button class="key">n⃞</button>
+    <button class="key">o⃞</button>
+    <button class="key">p⃞</button>
+    <button class="key">q⃞</button>
+    <button class="key">r⃞</button>
+    <button class="key">s⃞</button>
+    <button class="key">t⃞</button>
+    <button class="key">u⃞</button>
+    <button class="key">v⃞</button>
+    <button class="key">w⃞</button>
+    <button class="key">x⃞</button>
+    <button class="key">y⃞</button>
+    <button class="key">z⃞</button>
+    <!-- Huruf Besar dengan tanda ⃠ -->
+<button class="key">A⃠</button>
+<button class="key">B⃠</button>
+<button class="key">C⃠</button>
+<button class="key">D⃠</button>
+<button class="key">E⃠</button>
+<button class="key">F⃠</button>
+<button class="key">G⃠</button>
+<button class="key">H⃠</button>
+<button class="key">I⃠</button>
+<button class="key">J⃠</button>
+<button class="key">K⃠</button>
+<button class="key">L⃠</button>
+<button class="key">M⃠</button>
+<button class="key">N⃠</button>
+<button class="key">O⃠</button>
+<button class="key">P⃠</button>
+<button class="key">Q⃠</button>
+<button class="key">R⃠</button>
+<button class="key">S⃠</button>
+<button class="key">T⃠</button>
+<button class="key">U⃠</button>
+<button class="key">V⃠</button>
+<button class="key">W⃠</button>
+<button class="key">X⃠</button>
+<button class="key">Y⃠</button>
+<button class="key">Z⃠</button>
+
+<!-- Huruf Kecil dengan tanda ⃠ -->
+<button class="key">a⃠</button>
+<button class="key">b⃠</button>
+<button class="key">c⃠</button>
+<button class="key">d⃠</button>
+<button class="key">e⃠</button>
+<button class="key">f⃠</button>
+<button class="key">g⃠</button>
+<button class="key">h⃠</button>
+<button class="key">i⃠</button>
+<button class="key">j⃠</button>
+<button class="key">k⃠</button>
+<button class="key">l⃠</button>
+<button class="key">m⃠</button>
+<button class="key">n⃠</button>
+<button class="key">o⃠</button>
+<button class="key">p⃠</button>
+<button class="key">q⃠</button>
+<button class="key">r⃠</button>
+<button class="key">s⃠</button>
+<button class="key">t⃠</button>
+<button class="key">u⃠</button>
+<button class="key">v⃠</button>
+<button class="key">w⃠</button>
+<button class="key">x⃠</button>
+<button class="key">y⃠</button>
+<button class="key">z⃠</button>
+<!-- Huruf Besar dengan tanda ⃟ -->
+<button class="key">A⃟</button>
+<button class="key">B⃟</button>
+<button class="key">C⃟</button>
+<button class="key">D⃟</button>
+<button class="key">E⃟</button>
+<button class="key">F⃟</button>
+<button class="key">G⃟</button>
+<button class="key">H⃟</button>
+<button class="key">I⃟</button>
+<button class="key">J⃟</button>
+<button class="key">K⃟</button>
+<button class="key">L⃟</button>
+<button class="key">M⃟</button>
+<button class="key">N⃟</button>
+<button class="key">O⃟</button>
+<button class="key">P⃟</button>
+<button class="key">Q⃟</button>
+<button class="key">R⃟</button>
+<button class="key">S⃟</button>
+<button class="key">T⃟</button>
+<button class="key">U⃟</button>
+<button class="key">V⃟</button>
+<button class="key">W⃟</button>
+<button class="key">X⃟</button>
+<button class="key">Y⃟</button>
+<button class="key">Z⃟</button>
+
+<!-- Huruf Kecil dengan tanda ⃟ -->
+<button class="key">a⃟</button>
+<button class="key">b⃟</button>
+<button class="key">c⃟</button>
+<button class="key">d⃟</button>
+<button class="key">e⃟</button>
+<button class="key">f⃟</button>
+<button class="key">g⃟</button>
+<button class="key">h⃟</button>
+<button class="key">i⃟</button>
+<button class="key">j⃟</button>
+<button class="key">k⃟</button>
+<button class="key">l⃟</button>
+<button class="key">m⃟</button>
+<button class="key">n⃟</button>
+<button class="key">o⃟</button>
+<button class="key">p⃟</button>
+<button class="key">q⃟</button>
+<button class="key">r⃟</button>
+<button class="key">s⃟</button>
+<button class="key">t⃟</button>
+<button class="key">u⃟</button>
+<button class="key">v⃟</button>
+<button class="key">w⃟</button>
+<button class="key">x⃟</button>
+<button class="key">y⃟</button>
+<button class="key">z⃟</button>
+
+    <button class="key">a̶</button>
+    <button class="key">b̶</button>
+    <button class="key">c̶</button>
+    <button class="key">d̶</button>
+    <button class="key">e̶</button>
+    <button class="key">f̶</button>
+    <button class="key">g̶</button>
+    <button class="key">h̶</button>
+    <button class="key">i̶</button>
+    <button class="key">j̶</button>
+    <button class="key">k̶</button>
+    <button class="key">l̶</button>
+    <button class="key">m̶</button>
+    <button class="key">n̶</button>
+    <button class="key">o̶</button>
+    <button class="key">p̶</button>
+    <button class="key">q̶</button>
+    <button class="key">r̶</button>
+    <button class="key">s̶</button>
+    <button class="key">t̶</button>
+    <button class="key">u̶</button>
+    <button class="key">v̶</button>
+    <button class="key">w̶</button>
+    <button class="key">x̶</button>
+    <button class="key">y̶</button>
+    <button class="key">z̶</button>
+    <button class="key">a̴</button>
+    <button class="key">b̴</button>
+    <button class="key">c̴</button>
+    <button class="key">d̴</button>
+    <button class="key">e̴</button>
+    <button class="key">f̴</button>
+    <button class="key">g̴</button>
+    <button class="key">h̴</button>
+    <button class="key">i̴</button>
+    <button class="key">j̴</button>
+    <button class="key">k̴</button>
+    <button class="key">l̴</button>
+    <button class="key">m̴</button>
+    <button class="key">n̴</button>
+    <button class="key">o̴</button>
+    <button class="key">p̴</button>
+    <button class="key">q̴</button>
+    <button class="key">r̴</button>
+    <button class="key">s̴</button>
+    <button class="key">t̴</button>
+    <button class="key">u̴</button>
+    <button class="key">v̴</button>
+    <button class="key">w̴</button>
+    <button class="key">x̴</button>
+    <button class="key">y̴</button>
+    <button class="key">z̴</button>
+</div>
+
+<div id="keyboard17" class="keyboard">
+<button class="key">A͢͠༽</button>
+<button class="key">B͢͠༽</button>
+<button class="key">C͢͠༽</button>
+<button class="key">D͢͠༽</button>
+<button class="key">E͢͠༽</button>
+<button class="key">F͢͠༽</button>
+<button class="key">G͢͠༽</button>
+<button class="key">H͢͠༽</button>
+<button class="key">I͢͠༽</button>
+<button class="key">J͢͠༽</button>
+<button class="key">K͢͠༽</button>
+<button class="key">L͢͠༽</button>
+<button class="key">M͢͠༽</button>
+<button class="key">N͢͠༽</button>
+<button class="key">O͢͠༽</button>
+<button class="key">P͢͠༽</button>
+<button class="key">Q͢͠༽</button>
+<button class="key">R͢͠༽</button>
+<button class="key">S͢͠༽</button>
+<button class="key">T͢͠༽</button>
+<button class="key">U͢͠༽</button>
+<button class="key">V͢͠༽</button>
+<button class="key">W͢͠༽</button>
+<button class="key">X͢͠༽</button>
+<button class="key">Y͢͠༽</button>
+<button class="key">Z͢͠༽</button>
+
+<button class="key">a͢͠༽</button>
+<button class="key">b͢͠༽</button>
+<button class="key">c͢͠༽</button>
+<button class="key">d͢͠༽</button>
+<button class="key">e͢͠༽</button>
+<button class="key">f͢͠༽</button>
+<button class="key">g͢͠༽</button>
+<button class="key">h͢͠༽</button>
+<button class="key">i͢͠༽</button>
+<button class="key">j͢͠༽</button>
+<button class="key">k͢͠༽</button>
+<button class="key">l͢͠༽</button>
+<button class="key">m͢͠༽</button>
+<button class="key">n͢͠༽</button>
+<button class="key">o͢͠༽</button>
+<button class="key">p͢͠༽</button>
+<button class="key">q͢͠༽</button>
+<button class="key">r͢͠༽</button>
+<button class="key">s͢͠༽</button>
+<button class="key">t͢͠༽</button>
+<button class="key">u͢͠༽</button>
+<button class="key">v͢͠༽</button>
+<button class="key">w͢͠༽</button>
+<button class="key">x͢͠༽</button>
+<button class="key">y͢͠༽</button>
+<button class="key">z͢͠༽</button>
+
+</div>
+
+<div id="keyboard18" class="keyboard">
+    <button class="key">⎱A̷̸̳⃜⎱</button>
+    <button class="key">⎱B̷̸̳⃜⎱</button>
+    <button class="key">⎱C̷̸̳⃜⎱</button>
+    <button class="key">⎱D̷̸̳⃜⎱</button>
+    <button class="key">⎱E̷̸̳⃜⎱</button>
+    <button class="key">⎱F̷̸̳⃜⎱</button>
+    <button class="key">⎱G̷̸̳⃜⎱</button>
+    <button class="key">⎱H̷̸̳⃜⎱</button>
+    <button class="key">⎱I̷̸̳⃜⎱</button>
+    <button class="key">⎱J̷̸̳⃜⎱</button>
+    <button class="key">⎱K̷̸̳⃜⎱</button>
+    <button class="key">⎱L̷̸̳⃜⎱</button>
+    <button class="key">⎱M̷̸̳⃜⎱</button>
+    <button class="key">⎱N̷̸̳⃜⎱</button>
+    <button class="key">⎱O̷̸̳⃜⎱</button>
+    <button class="key">⎱P̷̸̳⃜⎱</button>
+    <button class="key">⎱Q̷̸̳⃜⎱</button>
+    <button class="key">⎱R̷̸̳⃜⎱</button>
+    <button class="key">⎱S̷̸̳⃜⎱</button>
+    <button class="key">⎱T̷̸̳⃜⎱</button>
+    <button class="key">⎱U̷̸̳⃜⎱</button>
+    <button class="key">⎱V̷̸̳⃜⎱</button>
+    <button class="key">⎱W̷̸̳⃜⎱</button>
+    <button class="key">⎱X̷̸̳⃜⎱</button>
+    <button class="key">⎱Y̷̸̳⃜⎱</button>
+    <button class="key">⎱Z̷̸̳⃜⎱</button>
+    
+    <button class="key">⎱a̷̸̳⃜⎱</button>
+    <button class="key">⎱b̷̸̳⃜⎱</button>
+    <button class="key">⎱c̷̸̳⃜⎱</button>
+    <button class="key">⎱d̷̸̳⃜⎱</button>
+    <button class="key">⎱e̷̸̳⃜⎱</button>
+    <button class="key">⎱f̷̸̳⃜⎱</button>
+    <button class="key">⎱g̷̸̳⃜⎱</button>
+    <button class="key">⎱h̷̸̳⃜⎱</button>
+    <button class="key">⎱i̷̸̳⃜⎱</button>
+    <button class="key">⎱j̷̸̳⃜⎱</button>
+    <button class="key">⎱k̷̸̳⃜⎱</button>
+    <button class="key">⎱l̷̸̳⃜⎱</button>
+    <button class="key">⎱m̷̸̳⃜⎱</button>
+    <button class="key">⎱n̷̸̳⃜⎱</button>
+    <button class="key">⎱o̷̸̳⃜⎱</button>
+    <button class="key">⎱p̷̸̳⃜⎱</button>
+    <button class="key">⎱q̷̸̳⃜⎱</button>
+    <button class="key">⎱r̷̸̳⃜⎱</button>
+    <button class="key">⎱s̷̸̳⃜⎱</button>
+    <button class="key">⎱t̷̸̳⃜⎱</button>
+    <button class="key">⎱u̷̸̳⃜⎱</button>
+    <button class="key">⎱v̷̸̳⃜⎱</button>
+    <button class="key">⎱w̷̸̳⃜⎱</button>
+    <button class="key">⎱x̷̸̳⃜⎱</button>
+    <button class="key">⎱y̷̸̳⃜⎱</button>
+    <button class="key">⎱z̷̸̳⃜⎱</button>
+
+    <button class="key">a̷</button>
+    <button class="key">b̷</button>
+    <button class="key">c̷</button>
+    <button class="key">d̷</button>
+    <button class="key">e̷</button>
+    <button class="key">f̷</button>
+    <button class="key">g̷</button>
+    <button class="key">h̷</button>
+    <button class="key">i̷</button>
+    <button class="key">j̷</button>
+    <button class="key">k̷</button>
+    <button class="key">l̷</button>
+    <button class="key">m̷</button>
+    <button class="key">n̷</button>
+    <button class="key">o̷</button>
+    <button class="key">p̷</button>
+    <button class="key">q̷</button>
+    <button class="key">r̷</button>
+    <button class="key">s̷</button>
+    <button class="key">t̷</button>
+    <button class="key">u̷</button>
+    <button class="key">v̷</button>
+    <button class="key">w̷</button>
+    <button class="key">x̷</button>
+    <button class="key">y̷</button>
+    <button class="key">z̷</button>
+</div>
+
+<div id="keyboard19" class="keyboard">
+<!-- Huruf Kecil Superscript -->
+<button class="key">ᵃ</button>
+<button class="key">ᵇ</button>
+<button class="key">ᶜ</button>
+<button class="key">ᵈ</button>
+<button class="key">ᵉ</button>
+<button class="key">ᶠ</button>
+<button class="key">ᵍ</button>
+<button class="key">ʰ</button>
+<button class="key">ⁱ</button>
+<button class="key">ʲ</button>
+<button class="key">ᵏ</button>
+<button class="key">ˡ</button>
+<button class="key">ᵐ</button>
+<button class="key">ⁿ</button>
+<button class="key">ᵒ</button>
+<button class="key">ᵖ</button>
+<button class="key">ᵠ</button>
+<button class="key">ʳ</button>
+<button class="key">ˢ</button>
+<button class="key">ᵗ</button>
+<button class="key">ᵘ</button>
+<button class="key">ᵛ</button>
+<button class="key">ʷ</button>
+<button class="key">ˣ</button>
+<button class="key">ʸ</button>
+<button class="key">ᶻ</button>
+
+<!-- Huruf Besar Superscript -->
+<button class="key">ᴬ</button>
+<button class="key">ᴮ</button>
+<button class="key">ᴰ</button>
+<button class="key">ᴱ</button>
+<button class="key">ᴳ</button>
+<button class="key">ᴴ</button>
+<button class="key">ᴵ</button>
+<button class="key">ᴶ</button>
+<button class="key">ᴷ</button>
+<button class="key">ᴸ</button>
+<button class="key">ᴹ</button>
+<button class="key">ᴺ</button>
+<button class="key">ᴼ</button>
+<button class="key">ᴾ</button>
+<button class="key">ᴿ</button>
+<button class="key">ᵀ</button>
+<button class="key">ᵁ</button>
+<button class="key">ᵂ</button>
+
+<!-- Huruf Subscript -->
+<button class="key">ₐ</button>
+<button class="key">ₑ</button>
+<button class="key">ₕ</button>
+<button class="key">ₗ</button>
+<button class="key">ₘ</button>
+<button class="key">ₙ</button>
+<button class="key">ₒ</button>
+<button class="key">ₚ</button>
+<button class="key">ₛ</button>
+<button class="key">ₜ</button>
+<button class="key">ₓ</button>
+
+<!-- Huruf Alternatif -->
+<button class="key">ꪖ</button>
+<button class="key">᥇</button>
+<button class="key">ᥴ</button>
+<button class="key">ᦔ</button>
+<button class="key">ꫀ</button>
+<button class="key">ᠻ</button>
+<button class="key">ᧁ</button>
+<button class="key">ꫝ</button>
+<button class="key">꠸</button>
+<button class="key">꠹</button>
+<button class="key">ᛕ</button>
+<button class="key">ꪶ</button>
+<button class="key">ꪑ</button>
+<button class="key">ꪀ</button>
+<button class="key">ꪮ</button>
+<button class="key">ρ</button>
+<button class="key">ꪇ</button>
+<button class="key">᥅</button>
+<button class="key">ᦓ</button>
+<button class="key">ꪻ</button>
+<button class="key">ꪊ</button>
+<button class="key">ꪜ</button>
+<button class="key">᭙</button>
+<button class="key">᥊</button>
+<button class="key">ꪗ</button>
+<button class="key">ƺ</button>
+
+</div>
+<div id="keyboard20" class="keyboard">
+    <button class="key">ค</button>
+    <button class="key">๒</button>
+    <button class="key">ς</button>
+    <button class="key">๔</button>
+    <button class="key">є</button>
+    <button class="key">Ŧ</button>
+    <button class="key">ﻮ</button>
+    <button class="key">ђ</button>
+    <button class="key">เ</button>
+    <button class="key">ן</button>
+    <button class="key">к</button>
+    <button class="key">ɭ</button>
+    <button class="key">๓</button>
+    <button class="key">ภ</button>
+    <button class="key">๏</button>
+    <button class="key">ק</button>
+    <button class="key">ợ</button>
+    <button class="key">г</button>
+    <button class="key">ร</button>
+    <button class="key">Շ</button>
+    <button class="key">ย</button>
+    <button class="key">ש</button>
+    <button class="key">ฬ</button>
+    <button class="key">א</button>
+    <button class="key">ץ</button>
+    <button class="key">չ</button>
+</div>
+
+      
+      
+      
+       <div id="keyboard" class="keyboard">
+            <!-- Tombol huruf -->
+    <button class="key">Ａ</button>
+    <button class="key">Ｂ</button>
+    <button class="key">Ｃ</button>
+    <button class="key">Ｄ</button>
+    <button class="key">Ｅ</button>
+    <button class="key">Ｆ</button>
+    <button class="key">Ｇ</button>
+    <button class="key">Ｈ</button>
+    <button class="key">Ｉ</button>
+    <button class="key">Ｊ</button>
+    <button class="key">Ｋ</button>
+    <button class="key">Ｌ</button>
+    <button class="key">Ｍ</button>
+    <button class="key">Ｎ</button>
+    <button class="key">Ｏ</button>
+    <button class="key">Ｐ</button>
+    <button class="key">Ｑ</button>
+    <button class="key">Ｒ</button>
+    <button class="key">Ｓ</button>
+    <button class="key">Ｔ</button>
+    <button class="key">Ｕ</button>
+    <button class="key">Ｖ</button>
+    <button class="key">Ｗ</button>
+    <button class="key">Ｘ</button>
+    <button class="key">Ｙ</button>
+    <button class="key">Ｚ</button>
+
+    <!-- Huruf besar 𝐀-𝐙 -->
+    <button class="key">𝐀</button>
+    <button class="key">𝐁</button>
+    <button class="key">𝐂</button>
+    <button class="key">𝐃</button>
+    <button class="key">𝐄</button>
+    <button class="key">𝐅</button>
+    <button class="key">𝐆</button>
+    <button class="key">𝐇</button>
+    <button class="key">𝐈</button>
+    <button class="key">𝐉</button>
+    <button class="key">𝐊</button>
+    <button class="key">𝐋</button>
+    <button class="key">𝐌</button>
+    <button class="key">𝐍</button>
+    <button class="key">𝐎</button>
+    <button class="key">𝐏</button>
+    <button class="key">𝐐</button>
+    <button class="key">𝐑</button>
+    <button class="key">𝐒</button>
+    <button class="key">𝐓</button>
+    <button class="key">𝐔</button>
+    <button class="key">𝐕</button>
+    <button class="key">𝐖</button>
+    <button class="key">𝐗</button>
+    <button class="key">𝐘</button>
+    <button class="key">𝐙</button>
+    
+    <!-- Huruf kecil 𝐚-𝐳 -->
+    <button class="key">𝐚</button>
+    <button class="key">𝐛</button>
+    <button class="key">𝐜</button>
+    <button class="key">𝐝</button>
+    <button class="key">𝐞</button>
+    <button class="key">𝐟</button>
+    <button class="key">𝐠</button>
+    <button class="key">𝐡</button>
+    <button class="key">𝐢</button>
+    <button class="key">𝐣</button>
+    <button class="key">𝐤</button>
+    <button class="key">𝐥</button>
+    <button class="key">𝐦</button>
+    <button class="key">𝐧</button>
+    <button class="key">𝐨</button>
+    <button class="key">𝐩</button>
+    <button class="key">𝐪</button>
+    <button class="key">𝐫</button>
+    <button class="key">𝐬</button>
+    <button class="key">𝐭</button>
+    <button class="key">𝐮</button>
+    <button class="key">𝐯</button>
+    <button class="key">𝐰</button>
+    <button class="key">𝐱</button>
+    <button class="key">𝐲</button>
+    <button class="key">𝐳</button>
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
     <button class="key">ぁ</button>
     <button class="key">あ</button>
     <button class="key">ぃ</button>
@@ -1375,272 +2308,22 @@ style: (txt) => `
     <button class="key">ま</button>
     <button class="key">み</button>
     
-    <button class="key">ꍏ</button>
-    <button class="key">ꌃ</button>
-    <button class="key">ꉓ</button>
-    <button class="key">ꀸ</button>
-    <button class="key">ꍟ</button>
-    <button class="key">ꎇ</button>
-    <button class="key">ꁅ</button>
-    <button class="key">ꃅ</button>
-    <button class="key">ꀤ</button>
-    <button class="key">ꀭ</button>
-    <button class="key">ꀘ</button>
-    <button class="key">꒒</button>
-    <button class="key">ꂵ</button>
-    <button class="key">ꈤ</button>
-    <button class="key">ꂦ</button>
-    <button class="key">ꉣ</button>
-    <button class="key">ꆰ</button>
-    <button class="key">ꋪ</button>
-    <button class="key">ꌗ</button>
-    <button class="key">꓄</button>
-    <button class="key">ꀎ</button>
-    <button class="key">ꃴ</button>
-    <button class="key">ꅏ</button>
-    <button class="key">ꊼ</button>
-    <button class="key">ꌩ</button>
-    <button class="key">ꁴ</button>
 
-    <button class="key">卂</button>
-    <button class="key">乃</button>
-    <button class="key">匚</button>
-    <button class="key">ᗪ</button>
-    <button class="key">乇</button>
-    <button class="key">千</button>
-    <button class="key">Ꮆ</button>
-    <button class="key">卄</button>
-    <button class="key">丨</button>
-    <button class="key">ﾌ</button>
-    <button class="key">Ҝ</button>
-    <button class="key">ㄥ</button>
-    <button class="key">爪</button>
-    <button class="key">几</button>
-    <button class="key">ㄖ</button>
-    <button class="key">卩</button>
-    <button class="key">Ɋ</button>
-    <button class="key">尺</button>
-    <button class="key">丂</button>
-    <button class="key">ㄒ</button>
-    <button class="key">ㄩ</button>
-    <button class="key">ᐯ</button>
-    <button class="key">山</button>
-    <button class="key">乂</button>
-    <button class="key">ㄚ</button>
-    <button class="key">乙</button>
-    
-    <button class="key">ǎ̴̰͎̪̠̱̱</button>
-    <button class="key">b̶̟̑̊͠</button>
-    <button class="key">č̵̨̙̼̫̻͉͒̾̄̉͝</button>
-    <button class="key">d̸̻̉̔͗̈́̚</button>
-    <button class="key">ι̺͖</button>
-    <button class="key">ę̸̡̛̥̥͔̍̍̌̈͂̈̏́</button>
-    <button class="key">f̷̨̳̱͓̞̪̝͇͛͌̍͗̈̂͗͘͝</button>
-    <button class="key">g̷̥͖͈̪̻̾̐̀̽</button>
-    <button class="key">ḩ̴̧̧̪͓̲̝̫̺̉̒̒̊͋̒͠</button>
-    <button class="key">ì̸͍͎̟͎̹̔̿͂͌</button>
-    <button class="key">j̸̗̮͚̗̠̍͗̽͊́͑̂͂͠</button>
-    <button class="key">k̵̺̈̋̋͝</button>
-    <button class="key">ľ̵̰͔̗͈͈̦̙̮̜̔͌</button>
-    <button class="key">m̵̼̼̈̽̕</button>
-    <button class="key">n̷̬̞̣̐̑̀͌͒̾͠͠</button>
-    <button class="key">o̵̻̣̮͆̏̈́̑̂̃̚͝͠͝</button>
-    <button class="key">p̸̡̧̧̟̦̩̱̟̭̭͋̀͋̄͠</button>
-    <button class="key">q̶̛͕͎͙̂̑͒̈́͝</button>
-    <button class="key">r̸͙͈̘̘̳̹͊̍́ι͉͔</button>
-    <button class="key">s̶̠͔̖̰͓̃̀͂́</button>
-    <button class="key">t̵̛̠̻̻͛̊̊̓͝</button>
-    <button class="key">ȕ̵̧̈̕ι̮̻͈̗̬</button>
-    <button class="key">v̴̡̮̣̥̩̻̲̀̓͐͜͝</button>
-    <button class="key">w̷̢̛̻̮͔̍̆̎́̒̆͛</button>
-    <button class="key">x̷̨͚̝̱͔̬͙̭̹̲̄</button>
-    <button class="key">ỹ̶̨͖͈̪̋̂͐͛͑͆͘͠</button>
-    <button class="key">ẕ̶̧̞̠͇̒̀͛̈́̇̉̑͘͘͜</button>
-    <button class="key">a⃞</button>
-    <button class="key">b⃞</button>
-    <button class="key">c⃞</button>
-    <button class="key">d⃞</button>
-    <button class="key">e⃞</button>
-    <button class="key">f⃞</button>
-    <button class="key">g⃞</button>
-    <button class="key">h⃞</button>
-    <button class="key">i⃞</button>
-    <button class="key">j⃞</button>
-    <button class="key">k⃞</button>
-    <button class="key">l⃞</button>
-    <button class="key">m⃞</button>
-    <button class="key">n⃞</button>
-    <button class="key">o⃞</button>
-    <button class="key">p⃞</button>
-    <button class="key">q⃞</button>
-    <button class="key">r⃞</button>
-    <button class="key">s⃞</button>
-    <button class="key">t⃞</button>
-    <button class="key">u⃞</button>
-    <button class="key">v⃞</button>
-    <button class="key">w⃞</button>
-    <button class="key">x⃞</button>
-    <button class="key">y⃞</button>
-    <button class="key">z⃞</button>
-    <button class="key">a̶</button>
-    <button class="key">b̶</button>
-    <button class="key">c̶</button>
-    <button class="key">d̶</button>
-    <button class="key">e̶</button>
-    <button class="key">f̶</button>
-    <button class="key">g̶</button>
-    <button class="key">h̶</button>
-    <button class="key">i̶</button>
-    <button class="key">j̶</button>
-    <button class="key">k̶</button>
-    <button class="key">l̶</button>
-    <button class="key">m̶</button>
-    <button class="key">n̶</button>
-    <button class="key">o̶</button>
-    <button class="key">p̶</button>
-    <button class="key">q̶</button>
-    <button class="key">r̶</button>
-    <button class="key">s̶</button>
-    <button class="key">t̶</button>
-    <button class="key">u̶</button>
-    <button class="key">v̶</button>
-    <button class="key">w̶</button>
-    <button class="key">x̶</button>
-    <button class="key">y̶</button>
-    <button class="key">z̶</button>
-    
-    <button class="key">a̴</button>
-    <button class="key">b̴</button>
-    <button class="key">c̴</button>
-    <button class="key">d̴</button>
-    <button class="key">e̴</button>
-    <button class="key">f̴</button>
-    <button class="key">g̴</button>
-    <button class="key">h̴</button>
-    <button class="key">i̴</button>
-    <button class="key">j̴</button>
-    <button class="key">k̴</button>
-    <button class="key">l̴</button>
-    <button class="key">m̴</button>
-    <button class="key">n̴</button>
-    <button class="key">o̴</button>
-    <button class="key">p̴</button>
-    <button class="key">q̴</button>
-    <button class="key">r̴</button>
-    <button class="key">s̴</button>
-    <button class="key">t̴</button>
-    <button class="key">u̴</button>
-    <button class="key">v̴</button>
-    <button class="key">w̴</button>
-    <button class="key">x̴</button>
-    <button class="key">y̴</button>
-    <button class="key">z̴</button>
-    
-    <button class="key">a̷</button>
-    <button class="key">b̷</button>
-    <button class="key">c̷</button>
-    <button class="key">d̷</button>
-    <button class="key">e̷</button>
-    <button class="key">f̷</button>
-    <button class="key">g̷</button>
-    <button class="key">h̷</button>
-    <button class="key">i̷</button>
-    <button class="key">j̷</button>
-    <button class="key">k̷</button>
-    <button class="key">l̷</button>
-    <button class="key">m̷</button>
-    <button class="key">n̷</button>
-    <button class="key">o̷</button>
-    <button class="key">p̷</button>
-    <button class="key">q̷</button>
-    <button class="key">r̷</button>
-    <button class="key">s̷</button>
-    <button class="key">t̷</button>
-    <button class="key">u̷</button>
-    <button class="key">v̷</button>
-    <button class="key">w̷</button>
-    <button class="key">x̷</button>
-    <button class="key">y̷</button>
-    <button class="key">z̷</button>
 
-    <button class="key">ᴬ</button>
-    <button class="key">ᴮ</button>
-    <button class="key">ᶜ</button>
-    <button class="key">ᴰ</button>
-    <button class="key">ᴱ</button>
-    <button class="key">ᶠ</button>
-    <button class="key">ᴳ</button>
-    <button class="key">ᴴ</button>
-    <button class="key">ᴵ</button>
-    <button class="key">ᴶ</button>
-    <button class="key">ᴷ</button>
-    <button class="key">ᴸ</button>
-    <button class="key">ᴹ</button>
-    <button class="key">ᴺ</button>
-    <button class="key">ᴼ</button>
-    <button class="key">ᴾ</button>
-    <button class="key">Q</button>
-    <button class="key">ᴿ</button>
-    <button class="key">ˢ</button>
-    <button class="key">ᵀ</button>
-    <button class="key">ᵁ</button>
-    <button class="key">ⱽ</button>
-    <button class="key">ᵂ</button>
-    <button class="key">ˣ</button>
-    <button class="key">ʸ</button>
-    <button class="key">ᶻ</button>
+
     
-    <button class="key">ค</button>
-    <button class="key">๒</button>
-    <button class="key">ς</button>
-    <button class="key">๔</button>
-    <button class="key">є</button>
-    <button class="key">Ŧ</button>
-    <button class="key">ﻮ</button>
-    <button class="key">ђ</button>
-    <button class="key">เ</button>
-    <button class="key">ן</button>
-    <button class="key">к</button>
-    <button class="key">ɭ</button>
-    <button class="key">๓</button>
-    <button class="key">ภ</button>
-    <button class="key">๏</button>
-    <button class="key">ק</button>
-    <button class="key">ợ</button>
-    <button class="key">г</button>
-    <button class="key">ร</button>
-    <button class="key">Շ</button>
-    <button class="key">ย</button>
-    <button class="key">ש</button>
-    <button class="key">ฬ</button>
-    <button class="key">א</button>
-    <button class="key">ץ</button>
-    <button class="key">չ</button>
+
+
     
-    <button class="key">Α</button>
-    <button class="key">Β</button>
-    <button class="key">Γ</button>
-    <button class="key">Δ</button>
-    <button class="key">Ε</button>
-    <button class="key">Ζ</button>
-    <button class="key">Η</button>
-    <button class="key">Θ</button>
-    <button class="key">Ι</button>
-    <button class="key">Κ</button>
-    <button class="key">Λ</button>
-    <button class="key">Μ</button>
-    <button class="key">Ν</button>
-    <button class="key">Ξ</button>
-    <button class="key">Ο</button>
-    <button class="key">Π</button>
-    <button class="key">Ρ</button>
-    <button class="key">Σ</button>
-    <button class="key">Τ</button>
-    <button class="key">Υ</button>
-    <button class="key">Φ</button>
-    <button class="key">Χ</button>
-    <button class="key">Ψ</button>
-    <button class="key">Ω</button>
+
+    
+
+
+
+    
+
+    
+
     
 
     <button class="key">က</button>
@@ -1805,34 +2488,6 @@ style: (txt) => `
     <button class="key">雷</button>
     <button class="key">电</button>
     
-    <button class="key">ا</button>
-    <button class="key">ب</button>
-    <button class="key">ت</button>
-    <button class="key">ث</button>
-    <button class="key">ج</button>
-    <button class="key">ح</button>
-    <button class="key">خ</button>
-    <button class="key">د</button>
-    <button class="key">ذ</button>
-    <button class="key">ر</button>
-    <button class="key">ز</button>
-    <button class="key">س</button>
-    <button class="key">ش</button>
-    <button class="key">ص</button>
-    <button class="key">ض</button>
-    <button class="key">ط</button>
-    <button class="key">ظ</button>
-    <button class="key">ع</button>
-    <button class="key">غ</button>
-    <button class="key">ف</button>
-    <button class="key">ق</button>
-    <button class="key">ك</button>
-    <button class="key">ل</button>
-    <button class="key">م</button>
-    <button class="key">ن</button>
-    <button class="key">ه</button>
-    <button class="key">و</button>
-    <button class="key">ي</button>
 
 </div>
         
@@ -2100,6 +2755,121 @@ style: (txt) => `
 <button class="key-symbol">࿆</button>
 <button class="key-symbol">ြ</button>
 <button class="key-symbol">ၜ</button>
+<button class="key">ଡ</button>
+<button class="key">಄</button>
+<button class="key">🜳</button>
+<button class="key">🜲</button>
+<button class="key">🜼</button>
+<button class="key">🜛</button>
+<button class="key">𐀃</button>
+<button class="key">𐀔</button>
+<button class="key">𐁃</button>
+<button class="key">𐁅</button>
+<button class="key">𐁋</button>
+<button class="key">𐁍</button>
+<button class="key">𐁙</button>
+<button class="key">𐁛</button>
+<button class="key">𐁉</button>
+<button class="key">𐂶</button>
+<button class="key">𐂡</button>
+<button class="key">𐂢</button>
+<button class="key">ﷺ</button>
+<button class="key">ﷻ</button>
+<button class="key">﷼</button>
+<button class="key">﷽</button>
+<button class="key">𑪞</button>
+<button class="key">𑪟</button>
+<button class="key">𑪠</button>
+<button class="key">𑪡</button>
+<button class="key">𑪢</button>
+<button class="key">𝜟</button>
+<button class="key">𝜵</button>
+<button class="key">𝛷</button>
+<button class="key">𝜴</button>
+<button class="key">Ჯ</button>
+<button class="key">᳀</button>
+<button class="key">᳄</button>
+<button class="key">᳅</button>
+<button class="key">᳆</button>
+<button class="key">᳇</button>
+<button class="key">᳷</button>
+<button class="key">⁰</button>
+<button class="key">⁴</button>
+<button class="key">⁵</button>
+<button class="key">⁶</button>
+<button class="key">⁷</button>
+<button class="key">⁸</button>
+<button class="key">⁹</button>
+<button class="key">ₐ</button>
+<button class="key">ₑ</button>
+<button class="key">ₒ</button>
+<button class="key">ₓ</button>
+<button class="key">ₔ</button>
+<button class="key">₰</button>
+<button class="key">㎈</button>
+<button class="key">𐇐</button>
+<button class="key">𐇑</button>
+<button class="key">𐇛</button>
+<button class="key">𐇧</button>
+<button class="key">𐇵</button>
+<button class="key">𐙠</button>
+<button class="key">𐙼</button>
+<button class="key">𐚱</button>
+<button class="key">𐦖</button>
+<button class="key">𐦆</button>
+<button class="key">𐦟</button>
+<button class="key">𐫰</button>
+<button class="key">𐫱</button>
+<button class="key">𐫲</button>
+<button class="key">𐬼</button>
+<button class="key">𐬽</button>
+<button class="key">𐬾</button>
+<button class="key">𐬿</button>
+<button class="key">𑇩</button>
+<button class="key">𑈖</button>
+<button class="key">𑍟</button>
+<button class="key">𑐂</button>
+<button class="key">𑑛</button>
+<button class="key">𑚅</button>
+<button class="key">𑚃</button>
+<button class="key">𑚐</button>
+<button class="key">𑚮</button>
+<button class="key">𑚯</button>
+<button class="key">𑚵</button>
+<button class="key">𑚱</button>
+<button class="key">𑜔</button>
+<button class="key">𑜱</button>
+<button class="key">𑜹</button>
+<button class="key">𑠭</button>
+<button class="key">𑠮</button>
+<button class="key">𑠴</button>
+<button class="key">𑠶</button>
+<button class="key">𑠵</button>
+<button class="key">𑠯</button>
+<button class="key">𑠰</button>
+<button class="key">𑣮</button>
+<button class="key">𑣯</button>
+<button class="key">𑣿</button>
+<button class="key">𑰇</button>
+<button class="key">𑰃</button>
+<button class="key">𒃴</button>
+<button class="key">𒃾</button>
+<button class="key">𒄣</button>
+<button class="key">𒄶</button>
+<button class="key">𒅄</button>
+<button class="key">𒆴</button>
+<button class="key">𝛥</button>
+<button class="key">𐆒</button>
+<button class="key">𐆓</button>
+<button class="key">𐆔</button>
+<button class="key">𐆕</button>
+<button class="key">𐆖</button>
+<button class="key">𐆗</button>
+<button class="key">𐆘</button>
+<button class="key">𐆙</button>
+<button class="key">𐆚</button>
+<button class="key">𐆛</button>
+
 <button class="key-symbol">ტ</button>
 <button class="key-symbol">ჯ</button>
 <button class="key-symbol">წ</button>
@@ -3440,7 +4210,7 @@ style: (txt) => `
 <button class="key-symbol">༽</button>
 <button class="key-symbol">๛</button>
 <button class="key-symbol">ੈ</button>
-l<button class="key-symbol">ੂ</button>
+<button class="key-symbol">ੂ</button>
 <button class="key-symbol">ੑ</button>
 <button class="key-symbol">ਂ</button>
 <button class="key-symbol">ਿ</button>
@@ -3485,10 +4255,53 @@ l<button class="key-symbol">ੂ</button>
 <button class="key-symbol">⎶</button>
 <button class="key-symbol">⎴</button>
 <button class="key-symbol">⎵</button>
-<button class="key-symbol">␇</button>
-<button class="key-symbol">␀</button>
-<button class="key-symbol">␔</button>
-<button class="key-symbol">␜</button>
+<!-- Simbol Unik dalam Elemen Button -->
+<button class="key">⋅</button>
+<button class="key">˚</button>
+<button class="key">₊</button>
+<button class="key">‧</button>
+<button class="key">୨</button>
+<button class="key">୧</button>
+<button class="key">˖</button>
+<button class="key">𓍢</button>
+<button class="key">✧</button>
+<button class="key">. </button>
+<button class="key">⋆</button>
+<button class="key">°</button>
+<button class="key">ೃ</button>
+<button class="key">࿔</button>
+<button class="key">*:･</button>
+<button class="key">౨</button>
+<button class="key">ৎ</button>
+<button class="key">⟡</button>
+<button class="key">˖</button>
+<button class="key"> ࣪</button>
+<button class="key">༘</button>
+<button class="key">𝜗</button>
+<button class="key">𝜚</button>
+<button class="key">ʚ</button>
+<button class="key">ᗢ</button>
+<button class="key">ﾟ</button>
+<button class="key">｡</button>
+<button class="key">𖦹</button>
+<button class="key">ᯓ</button>
+<button class="key">⸜</button>
+<button class="key">𐭩</button>
+<button class="key">ྀ</button>
+<button class="key">ི</button>
+<button class="key">ִ</button>
+<button class="key">໋</button>
+<button class="key">͙</button>
+<button class="key">֒</button>
+<button class="key">*ੈ</button>
+<button class="key">♱</button>
+<button class="key">☾</button>
+<button class="key">❤︎</button>
+<button class="key">๋</button>
+<button class="key">࣭</button>
+<button class="key">⭑</button>
+<button class="key">⚝</button>
+
     
 </div>
 
@@ -6217,7 +7030,51 @@ document.querySelectorAll('.keyboard').forEach(keyboard => {
     }
 });
       
-      </script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Sembunyikan semua keyboard di awal
+    document.querySelectorAll('.keyboard').forEach(kb => kb.style.display = 'none');
+
+    // Fungsi untuk toggle keyboard
+    function toggleKeyboard(keyboardId) {
+        const keyboard = document.getElementById(keyboardId);
+        if (!keyboard) return;
+
+        // Sembunyikan semua keyboard sebelum menampilkan yang dipilih
+        document.querySelectorAll('.keyboard').forEach(kb => kb.style.display = 'none');
+
+        // Tampilkan atau sembunyikan keyboard yang diklik
+        keyboard.style.display = (keyboard.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Tambahkan event listener ke setiap tombol
+    document.getElementById('numbers1').addEventListener('click', () => toggleKeyboard('keyboard1'));
+    document.getElementById('numbers2').addEventListener('click', () => toggleKeyboard('keyboard2'));
+    document.getElementById('numbers3').addEventListener('click', () => toggleKeyboard('keyboard3'));
+    document.getElementById('numbers4').addEventListener('click', () => toggleKeyboard('keyboard4'));
+    document.getElementById('numbers5').addEventListener('click', () => toggleKeyboard('keyboard5'));
+    document.getElementById('numbers6').addEventListener('click', () => toggleKeyboard('keyboard6'));
+    document.getElementById('numbers7').addEventListener('click', () => toggleKeyboard('keyboard7'));
+    document.getElementById('numbers8').addEventListener('click', () => toggleKeyboard('keyboard8'));
+document.getElementById('numbers9').addEventListener('click', () => toggleKeyboard('keyboard9'));
+document.getElementById('numbers10').addEventListener('click', () => toggleKeyboard('keyboard10'));
+document.getElementById('numbers11').addEventListener('click', () => toggleKeyboard('keyboard11'));
+document.getElementById('numbers12').addEventListener('click', () => toggleKeyboard('keyboard12'));
+document.getElementById('numbers13').addEventListener('click', () => toggleKeyboard('keyboard13'));
+document.getElementById('numbers14').addEventListener('click', () => toggleKeyboard('keyboard14'));
+document.getElementById('numbers15').addEventListener('click', () => toggleKeyboard('keyboard15'));
+document.getElementById('numbers16').addEventListener('click', () => toggleKeyboard('keyboard16'));
+document.getElementById('numbers17').addEventListener('click', () => toggleKeyboard('keyboard17'));
+document.getElementById('numbers18').addEventListener('click', () => toggleKeyboard('keyboard18'));
+document.getElementById('numbers19').addEventListener('click', () => toggleKeyboard('keyboard19'));
+document.getElementById('numbers20').addEventListener('click', () => toggleKeyboard('keyboard20'));
+
+    
+});
+</script>
+
+      
+      
    </div>
      </div>
  
