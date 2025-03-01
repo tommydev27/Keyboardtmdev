@@ -230,28 +230,22 @@
                     display: none;
                     }
                 
-                .result-slider {
-                  position: absolute;
-                 top: 0;
-                    }
-                
-                 .result-container {
-                    height: 600px; 
-                    }
-                
-                .animate {
-                 animation: slideIn 1s ease-out;
-                    }
-                
-                @keyframes slideIn {
-                from {
-                 transform: translateX(-100%);
-                    }
-                    
-                to {
-                transform: translateX(0);
-                    }
-                 }
+.style-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-50px); /* Mulai dari atas */
+}
+
+.slide-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+
     
                 button:hover {
                 background-color: #2b2020;
@@ -444,7 +438,7 @@
       </div>
       
     <textarea id="inputText" placeholder="Tulis teks..." style="margin-bottom: 0px; resize: none;"></textarea>
-        
+
       <div class="button-container" style=" padding: 3px 0px;display: flex; gap: 15px;            margin-top: -5px;">
       <button class="action-button salin" 
           onclick="copyText()" 
@@ -495,27 +489,111 @@
         </button>
       </div>
         <div>
-        <button id="generateButton" onclick="generateStyles()" style=" border-radius: 5px; font-size: 12px; padding: 2px 5px; margin-left: 0px; margin-top: 0px; background-color: #ad0101; border: none; color: #fff; font-weight: bold;">Create Styles 🐬</button> 
+        <button id="generateButton" onclick="generateStyles()" style=" border-radius: 5px; font-size: 12px; padding: 2px 5px; margin-left: 0px; margin-top: 0px; background-color: #ad0101; border: none; color: #fff; font-weight: bold;">Create🐬</button> 
         
-        <button id="homeButton" style="border: none; background-color: #333; border-radius: 5px; font-size: 12px; cursor: pointer; color: #fff; padding: 2px 11px; margin-bottom: 5px; margin-left: 14px; font-weight: bold;">kreasi text klik di sini 🛅</button>
+        <button id="homeButton" style="border: none; background-color: #333; border-radius: 5px; font-size: 12px; cursor: pointer; color: #fff; padding: 2px 5px; margin-bottom: 5px; margin-left: 0px; font-weight: bold;">font 🛅</button>
         
-          <div class="result-container">
-        <div id="result" class="result-slider"></div>
-      </div>
 
-      <script>
-        function generateStyles() {
-          const text = document.getElementById("inputText").value.trim();
-        const resultDiv = document.getElementById("result");
-        const generateButton = document.getElementById("generateButton");
-        const resultContainer = document.querySelector(".result-container");
 
-        if (!text) {
-            alert("Masukkan teks untuk menghasilkan gaya.");
-            return;
+    <div class="controls" 
+        style="display: flex; justify-content: space-between; 
+         width: 25%; margin: 0px auto;">
+        
+        <div class="slider-container" style="align-items: center; gap: 0px; margin-top: -25px;">
+            <input type="range" id="glitchRange" min="1" max="10" value="3" style="width: 100px;">
+        </div>
+        
+        <div class="slider-container" style="align-items: center; gap: 0px; margin-top: -25px; padding: 0px 5px;">
+            <input type="range" id="cursorRange" min="0" max="20" value="0" style="width: 100px;">
+        </div>
+    </div>
+            <div id="glitchContainer" 
+        style="display: none; margin-top: 0px; margin-bottom: 5px; padding: 20px; border: 1px solid #ccc; border-radius : 5px; background-color: #f9f9f9; width: 100%; margin-left: auto; margin-right: auto;">
+        
+        <div id="glitchOutput" 
+            style="font-size: 15px; font-weight: bold; white-space: pre-wrap; word-wrap: break-word; color: #333;">
+        </div>
+    </div>
+
+<script>
+    const inputText = document.getElementById("inputText");
+    const glitchRange = document.getElementById("glitchRange");
+    const cursorRange = document.getElementById("cursorRange");
+    const glitchOutput = document.getElementById("glitchOutput");
+    const glitchContainer = document.getElementById("glitchContainer");
+
+    // Nonaktifkan range slider saat awal
+    glitchRange.disabled = true;
+    cursorRange.disabled = true;
+
+    function generateGlitch(text, amount) {
+        const chars = ['̴͔͕͔͕͚͙͢͢͠͠', '̵', '̶̱̲̳', '̷', '̸̿̿̿̿̿̿', '̸̸̸̸̸̸̳̳̳̳̳̲͠͠͠͠', '͔͕͔͕͚͙̺̺͚͙̳̀́͆͆̀́͢͢͠͠', '͇', '͈', '͉', '͍'];
+        let glitchText = '';
+        for (let char of text) {
+            glitchText += char;
+            for (let i = 0; i < amount; i++) {
+                glitchText += chars[Math.floor(Math.random() * chars.length)];
+            }
         }
+        return glitchText;
+    }
 
-        resultDiv.innerHTML = ""; 
+    function updateGlitch() {
+        const text = inputText.value;
+        const glitchAmount = parseInt(glitchRange.value);
+        const cursorOffset = parseInt(cursorRange.value);
+
+        glitchOutput.textContent = generateGlitch(text, glitchAmount);
+
+        // Tampilkan kolom glitch jika kursor lebih dari 0
+        glitchContainer.style.display = cursorOffset > 0 ? "block" : "none";
+
+        // Geser kursor ke kanan
+        setTimeout(() => {
+            inputText.selectionStart = inputText.selectionEnd = text.length + cursorOffset;
+        }, 10);
+    }
+
+    inputText.addEventListener("input", () => {
+        updateGlitch();
+        // Aktifkan slider hanya jika input memiliki teks
+        const hasText = inputText.value.trim().length > 0;
+        glitchRange.disabled = !hasText;
+        cursorRange.disabled = !hasText;
+    });
+
+    glitchRange.addEventListener("input", updateGlitch);
+    cursorRange.addEventListener("input", updateGlitch);
+</script>
+
+
+
+
+
+
+<div id="resultContainer" style="display: none;">
+    <div id="result"></div>
+</div>
+
+<script>
+function generateStyles() {
+    const textInput = document.getElementById("inputText");
+    if (!textInput) {
+        alert("Input teks tidak ditemukan.");
+        return;
+    }
+
+    const text = textInput.value.trim();
+    const resultDiv = document.getElementById("result");
+    const generateButton = document.getElementById("generateButton");
+    const resultContainer = document.getElementById("resultContainer");
+
+    if (!text) {
+        alert("Masukkan teks untuk menghasilkan gaya.");
+        return;
+    }
+
+    resultDiv.innerHTML = ""; 
 
         const styles = [
           { name: "styles", style: (txt) => `${txt}︻ꔮ芅ﾃ༭ꕹᆖꔷ一一一一` },
@@ -581,57 +659,47 @@ style: (txt) => `
 ╰🟥◤╱◖◀️◗╯╰◖◀️◗╲◥🟥╯`
       }
         ];
-          
-          styles.forEach(({ name, style }) => {
-              const div = document.createElement("div");
-              div.className = "style-item";
-              div.innerHTML = `
-                  <span><strong>${name}:</strong></span>
-                  <pre>${style(text)}</pre>
-              `;
 
-            const button = document.createElement("button");
-            button.className = "copy-button";
-            button.textContent = "Copy";
-            button.onclick = function() {
-                navigator.clipboard.writeText(style(text)).then(() => {
-                    alert("Teks berhasil disalin!");
-                }).catch(() => {
-                    alert("Gagal menyalin teks.");
-                });
-            };
+styles.forEach(({ name, style }) => {
+    const div = document.createElement("div");
+    div.className = "style-item hidden"; // Mulai dalam keadaan tersembunyi
+    div.innerHTML = `<span><strong>${name}:</strong></span><pre>${style(text)}</pre>`;
 
-            div.appendChild(button);
-            resultDiv.appendChild(div);
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.textContent = "Copy";
+    button.onclick = function() {
+        navigator.clipboard.writeText(style(text)).then(() => {
+            alert("Teks berhasil disalin!");
+        }).catch(() => {
+            alert("Gagal menyalin teks.");
         });
+    };
 
-        resultDiv.classList.add("animate");
-        resultContainer.style.display = "block";
+    div.appendChild(button);
+    resultDiv.appendChild(div);
 
-        generateButton.textContent = "Nonaktifkan";
-        generateButton.onclick = function() {
-            resultDiv.innerHTML = ''; 
-            
-            resultContainer.style.display = "none"; 
-            
-            resultDiv.classList.remove("animate");
-            generateButton.textContent = "Generate Styles";
-            
-            generateButton.onclick = generateStyles;
-              };
+    // Tambahkan animasi setelah delay singkat
+    setTimeout(() => {
+        div.classList.add("slide-down");
+    }, 100);
+});
 
-          let scrollTimeout;
-            window.addEventListener("scroll", function() {
+resultContainer.style.display = "block";
 
-            resultDiv.style.animation = "none";
+// Ubah tombol menjadi "Nonaktif"
+generateButton.textContent = "Nonaktif";
+generateButton.onclick = function() {
+    resultContainer.style.display = "none";
+    resultDiv.innerHTML = "";  
+    generateButton.textContent = "Create🐬";
+    generateButton.onclick = generateStyles;
+};
 
-            clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(function() {
-                resultDiv.style.animation = "0"; 
-                }, 0);
-              });
-            }
-          </script>
+}
+
+
+</script>
 
         
 <div class="button-container-wrapper">
@@ -703,40 +771,40 @@ style: (txt) => `
     <span><a style="font-size: 15px;  text-align: center;">A҉B҉C҉</a></span>
 </button>
 <button id="numbers9">
-    <span><a style="font-size: 15px;  text-align: center;">𝘼𝘽𝘾</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">𝘼𝘽𝘾</a></span>
 </button>
 <button id="numbers10">
-    <span><a style="font-size: 15px;  text-align: center;">𝙰𝙱𝙲</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">𝙰𝙱𝙲</a></span>
 </button>
 <button id="numbers11">
-    <span><a style="font-size: 15px;  text-align: center;">𝜟𝜝𝜮</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">𝜟𝜝𝜮</a></span>
 </button>
 <button id="numbers12">
-    <span><a style="font-size: 15px;  text-align: center;">ᏫᏤᏆ</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">ᏫᏤᏆ</a></span>
 </button>
 <button id="numbers13">
-    <span><a style="font-size: 15px;  text-align: center;">∂єℓ</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">∂єℓ</a></span>
 </button>
 <button id="numbers14">
-    <span><a style="font-size: 15px;  text-align: center;">ꊼꌃꁅ</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">ꊼꌃꁅ</a></span>
 </button>
 <button id="numbers15">
-    <span><a style="font-size: 15px;  text-align: center;">d̸̻̉̔͗̈́̚č̵̨̙̼̫̻͉͒̾̄̉͝v̴̡̮̣̥̩̻̲̀̓͐͜͝</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">d̸̻̉̔͗̈́̚č̵̨̙̼̫̻͉͒̾̄̉͝v̴̡̮̣̥̩̻̲̀̓͐͜͝</a></span>
 </button>
 <button id="numbers16">
-    <span><a style="font-size: 15px;  text-align: center;">a⃞b⃞c⃞</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">a⃞b⃞c⃞</a></span>
 </button>
 <button id="numbers17">
-    <span><a style="font-size: 15px;  text-align: center;">A͢͠༽B͢͠༽C͢͠༽</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">A͢͠༽B͢͠༽C͢͠༽</a></span>
 </button>
 <button id="numbers18">
-    <span><a style="font-size: 15px;  text-align: center;">⎱A̷̸̳⃜⎱⎱B̷̸̳⃜⎱⎱C̷̸̳⃜⎱</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">⎱A̷̸̳⃜⎱⎱B̷̸̳⃜⎱⎱C̷̸̳⃜⎱</a></span>
 </button>
 <button id="numbers19">
-    <span><a style="font-size: 15px;  text-align: center;">ₐ ᴮ ᶜ</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">ₐ ᴮ ᶜ</a></span>
 </button>
 <button id="numbers20">
-    <span><a style="font-size: 15px;  text-align: center;">ค๒ς</a></span>
+    <span><a style="font-size: 15px;  text-align: center; padding: 0px 25px;">ค๒ς</a></span>
 </button>
 
             
@@ -756,7 +824,7 @@ style: (txt) => `
           </button>
       </div>
       <div class="keyboard-container">
-      
+
       
 <!-- Tambahkan div keyboard untuk masing-masing tombol -->
 
@@ -1572,17 +1640,17 @@ style: (txt) => `
     <button class="key">χ</button>
     <button class="key">z</button>
     <button class="key">ʌ</button>
-    <button class="key">ɑ:</button>
+    <button class="key">ɑ</button>
     <button class="key">æ</button>
     <button class="key">e</button>
     <button class="key">ə</button>
-    <button class="key">ɜ:</button>
+    <button class="key">ɜ</button>
     <button class="key">ɪ</button>
-    <button class="key">i:</button>
+    <button class="key">i</button>
     <button class="key">ɒ</button>
-    <button class="key">ɔ:</button>
+    <button class="key">ɔ</button>
     <button class="key">ʊ</button>
-    <button class="key">u:</button>
+    <button class="key">u</button>
     <button class="key">aɪ</button>
     <button class="key">aʊ</button>
     <button class="key">eɪ</button>
@@ -4181,6 +4249,7 @@ style: (txt) => `
 <button class="key-symbol">⃘</button>
 <button class="key-symbol">⃙</button>
 <button class="key-symbol">⃚</button>
+<button class="key-symbol">⃨</button>
 <button class="key-symbol">⃛</button>
 <button class="key-symbol">⃜</button>
 <button class="key-symbol">⃝</button>
@@ -7628,7 +7697,7 @@ TOMMY 𝓐ᵈʰ͜͡ɛˡʸ͟ɴ͟͠𝔬‣⁌͜͡❬❬͜͡❭❭͜͡⁍๏ᆖᆖ�
 </div>
 
 <!-- Hasil Font -->
-<div id="result" style=" height: 210px; overflow-y: auto; margin-top: 10px; width: 100%;">
+<div id="text" style=" height: 210px; overflow-y: auto; margin-top: 10px; width: 100%;">
     <div class="input-group mb-3" >
         <input type="text" class="form-control text-1" value="ꕤϳ๏ʂɧ︢ɛᴘɩɴ乀ꕺノ＊＿﹅ 乀ꕺノ" id="copy_0" readonly>
         <div class="input-group-append">
@@ -7659,7 +7728,7 @@ TOMMY 𝓐ᵈʰ͜͡ɛˡʸ͟ɴ͟͠𝔬‣⁌͜͡❬❬͜͡❭❭͜͡⁍๏ᆖᆖ�
        </div>
             
    </div>
-
+<hr>
     <script>
     
        //try {
